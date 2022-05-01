@@ -16,6 +16,15 @@
 		788AB30E281F44A400D2DA08 /* StyleTransferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB30D281F44A400D2DA08 /* StyleTransferTests.swift */; };
 		788AB318281F44A400D2DA08 /* StyleTransferUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB317281F44A400D2DA08 /* StyleTransferUITests.swift */; };
 		788AB31A281F44A400D2DA08 /* StyleTransferUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB319281F44A400D2DA08 /* StyleTransferUITestsLaunchTests.swift */; };
+		788AB329281F45C600D2DA08 /* StyleBlue.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 788AB326281F45C500D2DA08 /* StyleBlue.mlmodel */; };
+		788AB32A281F45C600D2DA08 /* BlueStrong.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 788AB327281F45C500D2DA08 /* BlueStrong.mlmodel */; };
+		788AB32B281F45C600D2DA08 /* Hell.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 788AB328281F45C600D2DA08 /* Hell.mlmodel */; };
+		788AB32D281F45FD00D2DA08 /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB32C281F45FD00D2DA08 /* StyleManager.swift */; };
+		788AB32F281F464E00D2DA08 /* StyleModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB32E281F464E00D2DA08 /* StyleModels.swift */; };
+		788AB331281F49D400D2DA08 /* AbstractTest.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 788AB330281F49D400D2DA08 /* AbstractTest.mlmodel */; };
+		788AB336281F4D2B00D2DA08 /* StyleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB334281F4D2B00D2DA08 /* StyleCollectionViewCell.swift */; };
+		788AB337281F4D2B00D2DA08 /* StyleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 788AB335281F4D2B00D2DA08 /* StyleCollectionViewCell.xib */; };
+		788AB33A281F4F0900D2DA08 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB339281F4F0900D2DA08 /* UIImage+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		788AB313281F44A400D2DA08 /* StyleTransferUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StyleTransferUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		788AB317281F44A400D2DA08 /* StyleTransferUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTransferUITests.swift; sourceTree = "<group>"; };
 		788AB319281F44A400D2DA08 /* StyleTransferUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTransferUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		788AB326281F45C500D2DA08 /* StyleBlue.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = StyleBlue.mlmodel; sourceTree = "<group>"; };
+		788AB327281F45C500D2DA08 /* BlueStrong.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BlueStrong.mlmodel; sourceTree = "<group>"; };
+		788AB328281F45C600D2DA08 /* Hell.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Hell.mlmodel; sourceTree = "<group>"; };
+		788AB32C281F45FD00D2DA08 /* StyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleManager.swift; sourceTree = "<group>"; };
+		788AB32E281F464E00D2DA08 /* StyleModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleModels.swift; sourceTree = "<group>"; };
+		788AB330281F49D400D2DA08 /* AbstractTest.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = AbstractTest.mlmodel; sourceTree = "<group>"; };
+		788AB334281F4D2B00D2DA08 /* StyleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleCollectionViewCell.swift; sourceTree = "<group>"; };
+		788AB335281F4D2B00D2DA08 /* StyleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StyleCollectionViewCell.xib; sourceTree = "<group>"; };
+		788AB339281F4F0900D2DA08 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +117,13 @@
 		788AB2F5281F44A300D2DA08 /* StyleTransfer */ = {
 			isa = PBXGroup;
 			children = (
+				788AB338281F4EF200D2DA08 /* Extensions */,
+				788AB333281F4D1600D2DA08 /* Views */,
+				788AB332281F4CE900D2DA08 /* MLModels */,
 				788AB2F6281F44A300D2DA08 /* AppDelegate.swift */,
 				788AB2F8281F44A300D2DA08 /* SceneDelegate.swift */,
+				788AB32C281F45FD00D2DA08 /* StyleManager.swift */,
+				788AB32E281F464E00D2DA08 /* StyleModels.swift */,
 				788AB2FA281F44A300D2DA08 /* ViewController.swift */,
 				788AB2FC281F44A300D2DA08 /* Main.storyboard */,
 				788AB2FF281F44A400D2DA08 /* Assets.xcassets */,
@@ -125,6 +148,34 @@
 				788AB319281F44A400D2DA08 /* StyleTransferUITestsLaunchTests.swift */,
 			);
 			path = StyleTransferUITests;
+			sourceTree = "<group>";
+		};
+		788AB332281F4CE900D2DA08 /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				788AB327281F45C500D2DA08 /* BlueStrong.mlmodel */,
+				788AB330281F49D400D2DA08 /* AbstractTest.mlmodel */,
+				788AB328281F45C600D2DA08 /* Hell.mlmodel */,
+				788AB326281F45C500D2DA08 /* StyleBlue.mlmodel */,
+			);
+			path = MLModels;
+			sourceTree = "<group>";
+		};
+		788AB333281F4D1600D2DA08 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				788AB334281F4D2B00D2DA08 /* StyleCollectionViewCell.swift */,
+				788AB335281F4D2B00D2DA08 /* StyleCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		788AB338281F4EF200D2DA08 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				788AB339281F4F0900D2DA08 /* UIImage+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				788AB337281F4D2B00D2DA08 /* StyleCollectionViewCell.xib in Resources */,
 				788AB303281F44A400D2DA08 /* LaunchScreen.storyboard in Resources */,
 				788AB300281F44A400D2DA08 /* Assets.xcassets in Resources */,
 				788AB2FE281F44A300D2DA08 /* Main.storyboard in Resources */,
@@ -259,8 +311,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				788AB2FB281F44A300D2DA08 /* ViewController.swift in Sources */,
+				788AB32F281F464E00D2DA08 /* StyleModels.swift in Sources */,
 				788AB2F7281F44A300D2DA08 /* AppDelegate.swift in Sources */,
+				788AB329281F45C600D2DA08 /* StyleBlue.mlmodel in Sources */,
+				788AB33A281F4F0900D2DA08 /* UIImage+Extensions.swift in Sources */,
+				788AB331281F49D400D2DA08 /* AbstractTest.mlmodel in Sources */,
+				788AB32B281F45C600D2DA08 /* Hell.mlmodel in Sources */,
+				788AB336281F4D2B00D2DA08 /* StyleCollectionViewCell.swift in Sources */,
 				788AB2F9281F44A300D2DA08 /* SceneDelegate.swift in Sources */,
+				788AB32A281F45C600D2DA08 /* BlueStrong.mlmodel in Sources */,
+				788AB32D281F45FD00D2DA08 /* StyleManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
