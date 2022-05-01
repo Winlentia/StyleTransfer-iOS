@@ -32,6 +32,8 @@ struct StyleManager{
             s = try? Hell.init(configuration: config).model
         case .AbstractTest:
             s = try? AbstractTest.init(configuration: config).model
+        case .RickAndMorty:
+            s = try? RickAndMorty.init(configuration: config).model
         }
         
         return s

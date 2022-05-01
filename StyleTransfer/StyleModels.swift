@@ -14,6 +14,7 @@ enum StyleModels: String, CaseIterable {
     case StyleBlue
     case Hell
     case AbstractTest
+    case RickAndMorty
 }
 
 

@@ -18,8 +18,14 @@ class ViewController: UIViewController {
     let manager = StyleManager()
     @IBOutlet weak var styleCollectionView: UICollectionView!
     @IBOutlet weak var styleCollectionViewFlowLayout: UICollectionViewFlowLayout!
-    let styleDataSources: [StyleModels] = [.AbstractTest, .BlueStrong, .Hell, .StyleBlue]
-    
+    var styleDataSources: [StyleModels] {
+        var array: [StyleModels] = []
+        for style in StyleModels.allCases {
+            array.append(style)
+        }
+        return array
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,11 +33,11 @@ class ViewController: UIViewController {
         self.imageView.image = sampleImage
         
         styleCollectionView.register(.init(nibName: "StyleCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "StyleCellIdentifier")
-        styleCollectionViewFlowLayout.itemSize = .init(width: 180, height: 120)
         styleCollectionViewFlowLayout.scrollDirection = .horizontal
         styleCollectionView.collectionViewLayout = styleCollectionViewFlowLayout
         styleCollectionView.delegate = self
         styleCollectionView.dataSource = self
+        styleCollectionViewFlowLayout.itemSize = .init(width: 180, height: 120)
     }
 
     @IBAction func styleOnePressed(_ sender: Any) {
@@ -68,6 +74,8 @@ extension ViewController: UICollectionViewDataSource {
     
     
     
+    
+    
 }
 
 extension ViewController: UICollectionViewDelegate {
@@ -82,4 +90,5 @@ extension ViewController: UICollectionViewDelegate {
             
         }
     }
+    
 }

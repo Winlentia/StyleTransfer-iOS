@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7881C142281F53C9007D2571 /* RickAndMorty.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C141281F53C9007D2571 /* RickAndMorty.mlmodel */; };
 		788AB2F7281F44A300D2DA08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB2F6281F44A300D2DA08 /* AppDelegate.swift */; };
 		788AB2F9281F44A300D2DA08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB2F8281F44A300D2DA08 /* SceneDelegate.swift */; };
 		788AB2FB281F44A300D2DA08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB2FA281F44A300D2DA08 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7881C141281F53C9007D2571 /* RickAndMorty.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RickAndMorty.mlmodel; sourceTree = "<group>"; };
 		788AB2F3281F44A300D2DA08 /* StyleTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StyleTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788AB2F6281F44A300D2DA08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		788AB2F8281F44A300D2DA08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			children = (
 				788AB327281F45C500D2DA08 /* BlueStrong.mlmodel */,
 				788AB330281F49D400D2DA08 /* AbstractTest.mlmodel */,
+				7881C141281F53C9007D2571 /* RickAndMorty.mlmodel */,
 				788AB328281F45C600D2DA08 /* Hell.mlmodel */,
 				788AB326281F45C500D2DA08 /* StyleBlue.mlmodel */,
 			);
@@ -317,6 +320,7 @@
 				788AB33A281F4F0900D2DA08 /* UIImage+Extensions.swift in Sources */,
 				788AB331281F49D400D2DA08 /* AbstractTest.mlmodel in Sources */,
 				788AB32B281F45C600D2DA08 /* Hell.mlmodel in Sources */,
+				7881C142281F53C9007D2571 /* RickAndMorty.mlmodel in Sources */,
 				788AB336281F4D2B00D2DA08 /* StyleCollectionViewCell.swift in Sources */,
 				788AB2F9281F44A300D2DA08 /* SceneDelegate.swift in Sources */,
 				788AB32A281F45C600D2DA08 /* BlueStrong.mlmodel in Sources */,
