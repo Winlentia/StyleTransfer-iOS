@@ -8,6 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		7881C142281F53C9007D2571 /* RickAndMorty.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C141281F53C9007D2571 /* RickAndMorty.mlmodel */; };
+		7881C146281FDA79007D2571 /* gogh1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C143281FDA79007D2571 /* gogh1.mlmodel */; };
+		7881C147281FDA79007D2571 /* gogh2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C144281FDA79007D2571 /* gogh2.mlmodel */; };
+		7881C148281FDA79007D2571 /* gogh3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C145281FDA79007D2571 /* gogh3.mlmodel */; };
+		7881C15A28200C1A007D2571 /* PicassoIteration200.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C14A28200C19007D2571 /* PicassoIteration200.mlmodel */; };
+		7881C15B28200C1A007D2571 /* PicassoIteration160.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C14B28200C19007D2571 /* PicassoIteration160.mlmodel */; };
+		7881C15C28200C1A007D2571 /* PicassoIteration450.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C14C28200C19007D2571 /* PicassoIteration450.mlmodel */; };
+		7881C15D28200C1A007D2571 /* PicassoIteration110.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C14D28200C19007D2571 /* PicassoIteration110.mlmodel */; };
+		7881C15E28200C1A007D2571 /* PicassoIteration430.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C14E28200C19007D2571 /* PicassoIteration430.mlmodel */; };
+		7881C15F28200C1A007D2571 /* PicassoIteration280.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C14F28200C19007D2571 /* PicassoIteration280.mlmodel */; };
+		7881C16028200C1A007D2571 /* PicassoIteration130.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C15028200C19007D2571 /* PicassoIteration130.mlmodel */; };
+		7881C16128200C1A007D2571 /* PicassoIteration90.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C15128200C19007D2571 /* PicassoIteration90.mlmodel */; };
+		7881C16228200C1A007D2571 /* PicassoIteration210.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C15228200C19007D2571 /* PicassoIteration210.mlmodel */; };
+		7881C16328200C1A007D2571 /* PicassoIteration220.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C15328200C19007D2571 /* PicassoIteration220.mlmodel */; };
+		7881C16428200C1A007D2571 /* PicassoIteration300.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C15428200C19007D2571 /* PicassoIteration300.mlmodel */; };
+		7881C16528200C1A007D2571 /* PicassoIteration190.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C15528200C19007D2571 /* PicassoIteration190.mlmodel */; };
+		7881C16628200C1A007D2571 /* PicassoIteration290.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C15628200C19007D2571 /* PicassoIteration290.mlmodel */; };
+		7881C16728200C1A007D2571 /* PicassoIteration440.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C15728200C19007D2571 /* PicassoIteration440.mlmodel */; };
+		7881C16828200C1A007D2571 /* PicassoIteration140.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C15828200C1A007D2571 /* PicassoIteration140.mlmodel */; };
+		7881C16928200C1A007D2571 /* PicassoIteration470.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C15928200C1A007D2571 /* PicassoIteration470.mlmodel */; };
 		788AB2F7281F44A300D2DA08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB2F6281F44A300D2DA08 /* AppDelegate.swift */; };
 		788AB2F9281F44A300D2DA08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB2F8281F44A300D2DA08 /* SceneDelegate.swift */; };
 		788AB2FB281F44A300D2DA08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB2FA281F44A300D2DA08 /* ViewController.swift */; };
@@ -47,6 +66,25 @@
 
 /* Begin PBXFileReference section */
 		7881C141281F53C9007D2571 /* RickAndMorty.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RickAndMorty.mlmodel; sourceTree = "<group>"; };
+		7881C143281FDA79007D2571 /* gogh1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = gogh1.mlmodel; sourceTree = "<group>"; };
+		7881C144281FDA79007D2571 /* gogh2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = gogh2.mlmodel; sourceTree = "<group>"; };
+		7881C145281FDA79007D2571 /* gogh3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = gogh3.mlmodel; sourceTree = "<group>"; };
+		7881C14A28200C19007D2571 /* PicassoIteration200.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PicassoIteration200.mlmodel; sourceTree = "<group>"; };
+		7881C14B28200C19007D2571 /* PicassoIteration160.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PicassoIteration160.mlmodel; sourceTree = "<group>"; };
+		7881C14C28200C19007D2571 /* PicassoIteration450.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PicassoIteration450.mlmodel; sourceTree = "<group>"; };
+		7881C14D28200C19007D2571 /* PicassoIteration110.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PicassoIteration110.mlmodel; sourceTree = "<group>"; };
+		7881C14E28200C19007D2571 /* PicassoIteration430.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PicassoIteration430.mlmodel; sourceTree = "<group>"; };
+		7881C14F28200C19007D2571 /* PicassoIteration280.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PicassoIteration280.mlmodel; sourceTree = "<group>"; };
+		7881C15028200C19007D2571 /* PicassoIteration130.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PicassoIteration130.mlmodel; sourceTree = "<group>"; };
+		7881C15128200C19007D2571 /* PicassoIteration90.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PicassoIteration90.mlmodel; sourceTree = "<group>"; };
+		7881C15228200C19007D2571 /* PicassoIteration210.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PicassoIteration210.mlmodel; sourceTree = "<group>"; };
+		7881C15328200C19007D2571 /* PicassoIteration220.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PicassoIteration220.mlmodel; sourceTree = "<group>"; };
+		7881C15428200C19007D2571 /* PicassoIteration300.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PicassoIteration300.mlmodel; sourceTree = "<group>"; };
+		7881C15528200C19007D2571 /* PicassoIteration190.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PicassoIteration190.mlmodel; sourceTree = "<group>"; };
+		7881C15628200C19007D2571 /* PicassoIteration290.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PicassoIteration290.mlmodel; sourceTree = "<group>"; };
+		7881C15728200C19007D2571 /* PicassoIteration440.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PicassoIteration440.mlmodel; sourceTree = "<group>"; };
+		7881C15828200C1A007D2571 /* PicassoIteration140.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PicassoIteration140.mlmodel; sourceTree = "<group>"; };
+		7881C15928200C1A007D2571 /* PicassoIteration470.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PicassoIteration470.mlmodel; sourceTree = "<group>"; };
 		788AB2F3281F44A300D2DA08 /* StyleTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StyleTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		788AB2F6281F44A300D2DA08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		788AB2F8281F44A300D2DA08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +134,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7881C14928200C11007D2571 /* Picasso */ = {
+			isa = PBXGroup;
+			children = (
+				7881C15128200C19007D2571 /* PicassoIteration90.mlmodel */,
+				7881C14D28200C19007D2571 /* PicassoIteration110.mlmodel */,
+				7881C15028200C19007D2571 /* PicassoIteration130.mlmodel */,
+				7881C15828200C1A007D2571 /* PicassoIteration140.mlmodel */,
+				7881C14B28200C19007D2571 /* PicassoIteration160.mlmodel */,
+				7881C15528200C19007D2571 /* PicassoIteration190.mlmodel */,
+				7881C14A28200C19007D2571 /* PicassoIteration200.mlmodel */,
+				7881C15228200C19007D2571 /* PicassoIteration210.mlmodel */,
+				7881C15328200C19007D2571 /* PicassoIteration220.mlmodel */,
+				7881C14F28200C19007D2571 /* PicassoIteration280.mlmodel */,
+				7881C15628200C19007D2571 /* PicassoIteration290.mlmodel */,
+				7881C15428200C19007D2571 /* PicassoIteration300.mlmodel */,
+				7881C14E28200C19007D2571 /* PicassoIteration430.mlmodel */,
+				7881C15728200C19007D2571 /* PicassoIteration440.mlmodel */,
+				7881C14C28200C19007D2571 /* PicassoIteration450.mlmodel */,
+				7881C15928200C1A007D2571 /* PicassoIteration470.mlmodel */,
+			);
+			path = Picasso;
+			sourceTree = "<group>";
+		};
 		788AB2EA281F44A300D2DA08 = {
 			isa = PBXGroup;
 			children = (
@@ -155,7 +216,11 @@
 		788AB332281F4CE900D2DA08 /* MLModels */ = {
 			isa = PBXGroup;
 			children = (
+				7881C14928200C11007D2571 /* Picasso */,
 				788AB327281F45C500D2DA08 /* BlueStrong.mlmodel */,
+				7881C143281FDA79007D2571 /* gogh1.mlmodel */,
+				7881C144281FDA79007D2571 /* gogh2.mlmodel */,
+				7881C145281FDA79007D2571 /* gogh3.mlmodel */,
 				788AB330281F49D400D2DA08 /* AbstractTest.mlmodel */,
 				7881C141281F53C9007D2571 /* RickAndMorty.mlmodel */,
 				788AB328281F45C600D2DA08 /* Hell.mlmodel */,
@@ -313,15 +378,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7881C16328200C1A007D2571 /* PicassoIteration220.mlmodel in Sources */,
+				7881C148281FDA79007D2571 /* gogh3.mlmodel in Sources */,
+				7881C15C28200C1A007D2571 /* PicassoIteration450.mlmodel in Sources */,
+				7881C16628200C1A007D2571 /* PicassoIteration290.mlmodel in Sources */,
+				7881C16428200C1A007D2571 /* PicassoIteration300.mlmodel in Sources */,
+				7881C147281FDA79007D2571 /* gogh2.mlmodel in Sources */,
+				7881C15B28200C1A007D2571 /* PicassoIteration160.mlmodel in Sources */,
+				7881C15F28200C1A007D2571 /* PicassoIteration280.mlmodel in Sources */,
 				788AB2FB281F44A300D2DA08 /* ViewController.swift in Sources */,
 				788AB32F281F464E00D2DA08 /* StyleModels.swift in Sources */,
+				7881C16728200C1A007D2571 /* PicassoIteration440.mlmodel in Sources */,
 				788AB2F7281F44A300D2DA08 /* AppDelegate.swift in Sources */,
 				788AB329281F45C600D2DA08 /* StyleBlue.mlmodel in Sources */,
+				7881C16528200C1A007D2571 /* PicassoIteration190.mlmodel in Sources */,
+				7881C16128200C1A007D2571 /* PicassoIteration90.mlmodel in Sources */,
+				7881C16828200C1A007D2571 /* PicassoIteration140.mlmodel in Sources */,
+				7881C15A28200C1A007D2571 /* PicassoIteration200.mlmodel in Sources */,
+				7881C16928200C1A007D2571 /* PicassoIteration470.mlmodel in Sources */,
 				788AB33A281F4F0900D2DA08 /* UIImage+Extensions.swift in Sources */,
 				788AB331281F49D400D2DA08 /* AbstractTest.mlmodel in Sources */,
+				7881C16028200C1A007D2571 /* PicassoIteration130.mlmodel in Sources */,
 				788AB32B281F45C600D2DA08 /* Hell.mlmodel in Sources */,
+				7881C16228200C1A007D2571 /* PicassoIteration210.mlmodel in Sources */,
 				7881C142281F53C9007D2571 /* RickAndMorty.mlmodel in Sources */,
+				7881C146281FDA79007D2571 /* gogh1.mlmodel in Sources */,
 				788AB336281F4D2B00D2DA08 /* StyleCollectionViewCell.swift in Sources */,
+				7881C15E28200C1A007D2571 /* PicassoIteration430.mlmodel in Sources */,
+				7881C15D28200C1A007D2571 /* PicassoIteration110.mlmodel in Sources */,
 				788AB2F9281F44A300D2DA08 /* SceneDelegate.swift in Sources */,
 				788AB32A281F45C600D2DA08 /* BlueStrong.mlmodel in Sources */,
 				788AB32D281F45FD00D2DA08 /* StyleManager.swift in Sources */,

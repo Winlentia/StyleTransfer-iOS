@@ -14,7 +14,7 @@ import VideoToolbox
 class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
-    let sampleImage = UIImage(named: "MonaLisa")
+    let sampleImage = UIImage(named: "selfie")
     let manager = StyleManager()
     @IBOutlet weak var styleCollectionView: UICollectionView!
     @IBOutlet weak var styleCollectionViewFlowLayout: UICollectionViewFlowLayout!
@@ -36,7 +36,8 @@ class ViewController: UIViewController {
         styleCollectionViewFlowLayout.scrollDirection = .vertical
         styleCollectionView.delegate = self
         styleCollectionView.dataSource = self
-        styleCollectionViewFlowLayout.itemSize = .init(width: 200, height: 200)
+//        styleCollectionViewFlowLayout.itemSize = .init(width: 120, height: 120)
+        styleCollectionViewFlowLayout.minimumLineSpacing = 10
         styleCollectionView.collectionViewLayout = styleCollectionViewFlowLayout
     }
 
@@ -55,7 +56,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func originalmage(_ sender: Any) {
-        UIImageWriteToSavedPhotosAlbum(imageView.image!,nil,nil,nil);
+//        UIImageWriteToSavedPhotosAlbum(imageView.image!,nil,nil,nil);
         imageView.image = sampleImage
     }
 }
@@ -80,7 +81,7 @@ extension ViewController: UICollectionViewDataSource {
 
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        manager.getStyleImage(image: self.imageView.image!, style: styleDataSources[indexPath.row]) { result in
+        manager.getStyleImage(image: self.sampleImage!, style: styleDataSources[indexPath.row]) { result in
             switch result {
             case.success(let image):
                 self.imageView.image = image
@@ -91,4 +92,19 @@ extension ViewController: UICollectionViewDelegate {
         }
     }
     
+}
+
+extension ViewController: UICollectionViewDelegateFlowLayout {
+    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+////        return .init(width: 120, height: 120)
+//    }
+
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize(width: collectionView.bounds.height-5, height: collectionView.bounds.height-5)
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        return 10
+//    }
 }

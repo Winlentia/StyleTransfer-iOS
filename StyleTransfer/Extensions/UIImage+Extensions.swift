@@ -56,6 +56,68 @@ extension UIImage {
         
         return pixelBuffer
     }
+    
+    func cropImage() -> UIImage{
+        // The shortest side
+        let sideLength = min(
+            self.size.width,
+            self.size.height
+        )
+
+        // Determines the x,y coordinate of a centered
+        // sideLength by sideLength square
+        let sourceSize = self.size
+        let xOffset = (sourceSize.width - sideLength) / 2.0
+        let yOffset = (sourceSize.height - sideLength) / 2.0
+
+        // The cropRect is the rect of the image to keep,
+        // in this case centered
+        let cropRect = CGRect(
+            x: xOffset,
+            y: yOffset,
+            width: sideLength,
+            height: sideLength
+        ).integral
+
+        // Center crop the image
+        let sourceCGImage = self.cgImage!
+        let croppedCGImage = sourceCGImage.cropping(
+            to: cropRect
+        )!
+        return UIImage(cgImage: croppedCGImage)
+        
+    }
+    
+    func cropImage(xOffset: CGFloat, yOffset: CGFloat) -> UIImage{
+        // The shortest side
+        let sideLength = min(
+            self.size.width,
+            self.size.height
+        )
+
+        // Determines the x,y coordinate of a centered
+        // sideLength by sideLength square
+        let sourceSize = self.size
+        let xOffset = (sourceSize.width - sideLength) / 2.0
+        let yOffset = (sourceSize.height - sideLength) / 2.0
+
+        // The cropRect is the rect of the image to keep,
+        // in this case centered
+        let cropRect = CGRect(
+            x: xOffset,
+            y: yOffset,
+            width: sideLength,
+            height: sideLength
+        ).integral
+
+        // Center crop the image
+        let sourceCGImage = self.cgImage!
+        let croppedCGImage = sourceCGImage.cropping(
+            to: cropRect
+        )!
+        return UIImage(cgImage: croppedCGImage)
+        
+    }
 }
 
 
