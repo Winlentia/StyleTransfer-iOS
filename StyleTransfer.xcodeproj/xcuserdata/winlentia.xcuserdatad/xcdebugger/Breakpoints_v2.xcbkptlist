@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C74759F8-12E6-4C04-9FBC-F18973C3360B"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StyleTransfer/StyleManager.swift"
@@ -33,22 +33,6 @@
             startingLineNumber = "106"
             endingLineNumber = "106"
             landmarkName = "cropImage(xOffset:yOffset:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E3BB9414-5EB7-4D12-867C-8A11DF94FE7F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StyleTransfer/StyleManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "getStyleImage(image:style:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -33,12 +33,14 @@ class ViewController: UIViewController {
         self.imageView.image = sampleImage
         
         styleCollectionView.register(.init(nibName: "StyleCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "StyleCellIdentifier")
-        styleCollectionViewFlowLayout.scrollDirection = .vertical
+        let layout = UICollectionViewFlowLayout()
+        let height = styleCollectionView.frame.size.height - 10
+        layout.itemSize = .init(width: height, height: height)
+        layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 10
         styleCollectionView.delegate = self
         styleCollectionView.dataSource = self
-//        styleCollectionViewFlowLayout.itemSize = .init(width: 120, height: 120)
-        styleCollectionViewFlowLayout.minimumLineSpacing = 10
-        styleCollectionView.collectionViewLayout = styleCollectionViewFlowLayout
+        styleCollectionView.collectionViewLayout = layout
     }
 
     @IBAction func styleOnePressed(_ sender: Any) {
@@ -73,10 +75,6 @@ extension ViewController: UICollectionViewDataSource {
         return cell
     }
     
-    
-    
-    
-    
 }
 
 extension ViewController: UICollectionViewDelegate {
@@ -96,15 +94,15 @@ extension ViewController: UICollectionViewDelegate {
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-////        return .init(width: 120, height: 120)
-//    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return .init(width: 120, height: 120)
+    }
 
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 //        return CGSize(width: collectionView.bounds.height-5, height: collectionView.bounds.height-5)
 //    }
 //
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//        return 10
-//    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
 }
