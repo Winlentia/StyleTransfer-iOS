@@ -33,11 +33,11 @@ class ViewController: UIViewController {
         self.imageView.image = sampleImage
         
         styleCollectionView.register(.init(nibName: "StyleCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "StyleCellIdentifier")
-        styleCollectionViewFlowLayout.scrollDirection = .horizontal
-        styleCollectionView.collectionViewLayout = styleCollectionViewFlowLayout
+        styleCollectionViewFlowLayout.scrollDirection = .vertical
         styleCollectionView.delegate = self
         styleCollectionView.dataSource = self
-        styleCollectionViewFlowLayout.itemSize = .init(width: 180, height: 120)
+        styleCollectionViewFlowLayout.itemSize = .init(width: 200, height: 200)
+        styleCollectionView.collectionViewLayout = styleCollectionViewFlowLayout
     }
 
     @IBAction func styleOnePressed(_ sender: Any) {
