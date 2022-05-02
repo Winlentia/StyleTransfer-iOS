@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -26,34 +26,32 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYg-J5-QsR" userLabel="style1">
                                         <rect key="frame" x="0.0" y="0.0" width="124.5" height="50"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Style1"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Select Image"/>
                                         <connections>
-                                            <action selector="styleOnePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XJC-vU-T5h"/>
+                                            <action selector="selectImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GpG-E0-qBD"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2M0-5P-RoZ" userLabel="style2">
                                         <rect key="frame" x="124.5" y="0.0" width="125" height="50"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Style2"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Undo"/>
+                                        <connections>
+                                            <action selector="undoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WUp-um-QvC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLu-Yb-v6P" userLabel="style3">
                                         <rect key="frame" x="249.5" y="0.0" width="124.5" height="50"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Style3"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                        <connections>
+                                            <action selector="savePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bxF-AZ-iFT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="aK9-LN-yDB"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qea-XA-den">
-                                <rect key="frame" x="20" y="811" width="374" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="OriginalImage"/>
-                                <connections>
-                                    <action selector="originalmage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iro-bq-mcj"/>
-                                </connections>
-                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ybw-Sq-FZC">
                                 <rect key="frame" x="20" y="517" width="374" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -68,27 +66,35 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Select Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOp-me-hbL">
+                                <rect key="frame" x="20" y="235" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qea-XA-den" secondAttribute="trailing" constant="20" id="0IO-zc-xGt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZmU-UF-nrT" secondAttribute="trailing" constant="20" id="2N9-fs-gsv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Upx-Ow-byk" secondAttribute="trailing" constant="20" id="5FN-IS-Hed"/>
                             <constraint firstItem="Ybw-Sq-FZC" firstAttribute="top" secondItem="Upx-Ow-byk" secondAttribute="bottom" constant="20" id="97w-7s-CWy"/>
+                            <constraint firstItem="LOp-me-hbL" firstAttribute="centerX" secondItem="ZmU-UF-nrT" secondAttribute="centerX" id="DZh-YF-zLy"/>
                             <constraint firstItem="Upx-Ow-byk" firstAttribute="top" secondItem="ZmU-UF-nrT" secondAttribute="bottom" constant="20" id="QFi-N1-iNS"/>
-                            <constraint firstItem="qea-XA-den" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="S0N-w4-kPf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ybw-Sq-FZC" secondAttribute="trailing" constant="20" id="UPu-ex-4UN"/>
+                            <constraint firstItem="LOp-me-hbL" firstAttribute="top" secondItem="ZmU-UF-nrT" secondAttribute="bottom" constant="-192" id="YI4-R2-aad"/>
                             <constraint firstItem="ZmU-UF-nrT" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.405134" id="aBO-LX-hED"/>
                             <constraint firstItem="Upx-Ow-byk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="biu-9E-eWD"/>
                             <constraint firstItem="ZmU-UF-nrT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="g6J-xN-yuj"/>
                             <constraint firstItem="Ybw-Sq-FZC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tDV-B1-ayn"/>
-                            <constraint firstItem="qea-XA-den" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uZk-hI-9AE"/>
                             <constraint firstItem="ZmU-UF-nrT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="v0I-pS-epu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LOp-me-hbL" secondAttribute="trailing" constant="20" id="vzc-9u-eBj"/>
+                            <constraint firstItem="LOp-me-hbL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xEv-xq-mnB"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="ZmU-UF-nrT" id="StE-1g-jAF"/>
+                        <outlet property="selectImageLabel" destination="LOp-me-hbL" id="eXj-HA-shB"/>
                         <outlet property="styleCollectionView" destination="Ybw-Sq-FZC" id="QS5-4X-XO8"/>
                         <outlet property="styleCollectionViewFlowLayout" destination="8sO-xX-uJH" id="nVr-PK-r8U"/>
                     </connections>

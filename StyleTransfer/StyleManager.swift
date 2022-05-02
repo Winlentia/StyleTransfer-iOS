@@ -24,16 +24,16 @@ struct StyleManager{
         var s : MLModel?
         
         switch styleModel {
-        case .StyleBlue:
-            s = try? StyleBlue.init(configuration: config).model
-        case .BlueStrong:
-            s = try? BlueStrong.init(configuration: config).model
-        case .Hell:
-            s = try? Hell.init(configuration: config).model
-        case .AbstractTest:
-            s = try? AbstractTest.init(configuration: config).model
-        case .RickAndMorty:
-            s = try? RickAndMorty.init(configuration: config).model
+//        case .StyleBlue:
+//            s = try? StyleBlue.init(configuration: config).model
+//        case .BlueStrong:
+//            s = try? BlueStrong.init(configuration: config).model
+//        case .Hell:
+//            s = try? Hell.init(configuration: config).model
+//        case .AbstractTest:
+//            s = try? AbstractTest.init(configuration: config).model
+//        case .RickAndMorty:
+//            s = try? RickAndMorty.init(configuration: config).model
         case .Gogh1:
             s = try? gogh1.init(configuration: config).model
         case .Gogh2:

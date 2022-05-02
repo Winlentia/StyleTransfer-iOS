@@ -10,11 +10,11 @@ import Foundation
 
 
 enum StyleModels: String, CaseIterable {
-    case BlueStrong
-    case StyleBlue
-    case Hell
-    case AbstractTest
-    case RickAndMorty
+//    case BlueStrong
+//    case StyleBlue
+//    case Hell
+//    case AbstractTest
+//    case RickAndMorty
     case Gogh1
     case Gogh2
     case Gogh3

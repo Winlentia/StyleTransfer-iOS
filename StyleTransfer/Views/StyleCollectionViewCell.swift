@@ -11,7 +11,7 @@ class StyleCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var sampleImage: UIImageView!
     let monaLisa = UIImage(named: "MonaLisa")
-    var style: StyleModels = .Hell
+    var style: StyleModels = .Gogh1
     
     override func awakeFromNib() {
         super.awakeFromNib()
