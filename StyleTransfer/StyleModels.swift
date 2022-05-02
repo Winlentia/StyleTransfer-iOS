@@ -34,6 +34,7 @@ enum StyleModels: String, CaseIterable {
     case PicassoIteration440
     case PicassoIteration450
     case PicassoIteration470
+    case BrownTone
 }
 
 

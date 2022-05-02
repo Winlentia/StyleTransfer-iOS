@@ -72,6 +72,8 @@ struct StyleManager{
             s = try? PicassoIteration450.init(configuration: config).model
         case .PicassoIteration470:
             s = try? PicassoIteration470.init(configuration: config).model
+        case .BrownTone:
+            s = try? BrownTone.init(configuration: config).model
         }
         
         return s
