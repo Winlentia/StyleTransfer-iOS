@@ -10,11 +10,13 @@ import AVFoundation
 import CoreMedia
 import Vision
 import VideoToolbox
+import KRProgressHUD
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var styleCollectionView: UICollectionView!
+    @IBOutlet weak var artisticStyleCollectionView: UICollectionView!
     @IBOutlet weak var styleCollectionViewFlowLayout: UICollectionViewFlowLayout!
     @IBOutlet weak var selectImageLabel: UILabel!
     
@@ -31,14 +33,9 @@ class ViewController: UIViewController {
     var imagePicker: ImagePicker!
     
     
-    var styleDataSources: [StyleModels] {
-        var array: [StyleModels] = []
-        for style in StyleModels.allCases {
-            array.append(style)
-        }
-        return array
-    }
-        
+    let styleDataSources: [StyleModels] = StyleModels.getNormalStyles()
+    let artisticStyleDataSources: [StyleModels] = StyleModels.getArtisticStyles()
+    
 
     
     override func viewDidLoad() {
@@ -51,7 +48,14 @@ class ViewController: UIViewController {
         setupCollectionView()
     }
     
+
+    
     fileprivate func setupCollectionView() {
+        setupStyleCollectionView()
+        setupArtisticStyleCollectionView()
+    }
+    
+    fileprivate func setupStyleCollectionView() {
         styleCollectionView.register(.init(nibName: "StyleCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "StyleCellIdentifier")
         let layout = UICollectionViewFlowLayout()
         let height = styleCollectionView.frame.size.height - 10
@@ -61,6 +65,18 @@ class ViewController: UIViewController {
         styleCollectionView.delegate = self
         styleCollectionView.dataSource = self
         styleCollectionView.collectionViewLayout = layout
+    }
+    
+    fileprivate func setupArtisticStyleCollectionView() {
+        artisticStyleCollectionView.register(.init(nibName: "StyleCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "StyleCellIdentifier")
+        let layout = UICollectionViewFlowLayout()
+        let height = artisticStyleCollectionView.frame.size.height - 10
+        layout.itemSize = .init(width: height, height: height)
+        layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 10
+        artisticStyleCollectionView.delegate = self
+        artisticStyleCollectionView.dataSource = self
+        artisticStyleCollectionView.collectionViewLayout = layout
     }
     
     @IBAction func selectImage(_ sender: Any) {
@@ -76,17 +92,23 @@ class ViewController: UIViewController {
     
     @IBAction func savePressed(_ sender: Any) {
         
+        KRProgressHUD.show(withMessage: "Loading")
         if let image = imageView.image {
-             UIImageWriteToSavedPhotosAlbum(image,nil,nil,nil);
+            manager.scaleUpImage(image: image) { result in
+                switch result {
+                case .success(let scaledImage):
+                    UIImageWriteToSavedPhotosAlbum(scaledImage, nil, nil, nil)
+                    KRProgressHUD.dismiss {
+                        KRProgressHUD.showMessage("Saved Successfully")
+                    }
+                case .failure(let err):
+                    KRProgressHUD.dismiss {
+                        KRProgressHUD.showMessage("Failed \(err.localizedDescription)")
+                    }
+                }
+            }
             // create the alert
-            let alert = UIAlertController(title: "Success", message: "StyleImage saved to your Photos", preferredStyle: UIAlertController.Style.alert)
-
-            // add an action (button)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-
-            // show the alert
-            self.present(alert, animated: true, completion: nil)
-       
+                   
         }
     }
     @IBAction func originalmage(_ sender: Any) {
@@ -98,12 +120,20 @@ class ViewController: UIViewController {
 
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return styleDataSources.count
+        if collectionView === self.styleCollectionView {
+            return styleDataSources.count
+        } else {
+            return artisticStyleDataSources.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = styleCollectionView.dequeueReusableCell(withReuseIdentifier: "StyleCellIdentifier", for: indexPath) as! StyleCollectionViewCell
-        cell.setupCell(style: styleDataSources[indexPath.row])
+        if collectionView === self.styleCollectionView {
+            cell.setupCell(style: styleDataSources[indexPath.row])
+        } else {
+            cell.setupCell(style: artisticStyleDataSources[indexPath.row])
+        }
         return cell
     }
     
@@ -112,7 +142,13 @@ extension ViewController: UICollectionViewDataSource {
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let image = self.selectedImage {
-            manager.getStyleImage(image: image, style: styleDataSources[indexPath.row]) { result in
+            var style: StyleModels = .RickAndMorty
+            if collectionView === self.styleCollectionView {
+                style = styleDataSources[indexPath.row]
+            } else {
+                style = artisticStyleDataSources[indexPath.row]
+            }
+            manager.getStyleImage(image: image, style: style) { result in
                 switch result {
                 case.success(let styleImage):
                     self.imageView.image = styleImage

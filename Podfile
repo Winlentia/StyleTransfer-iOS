@@ -6,6 +6,7 @@ target 'StyleTransfer' do
   use_frameworks!
 
   # Pods for StyleTransfer
+  pod "KRProgressHUD"
 
   target 'StyleTransferTests' do
     inherit! :search_paths

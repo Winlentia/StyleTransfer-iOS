@@ -7,65 +7,156 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1574C119D904F07D1191E56E2658C76A /* Pods-StyleTransfer-StyleTransferUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D09F03716B2455126A346CD24679FE39 /* Pods-StyleTransfer-StyleTransferUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F3723F7E463A0B2BC9FFB7178A2DA7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		250433224210BE494DE1C7C481082928 /* Pods-StyleTransfer-StyleTransferUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC8A24C42C38634A2E4B2741372A023 /* Pods-StyleTransfer-StyleTransferUITests-dummy.m */; };
-		4D9E061642372940254B4C12CEBE0B9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		6AFBDA528227CA2AD03839334AC402E6 /* Pods-StyleTransferTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D680AB170280DB7D3261AB9C305AE6FB /* Pods-StyleTransferTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0231BF88DE78D1AF701640162F641EF1 /* KRActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99A4E9B3D5464F2EB052185AE0DB92 /* KRActivityIndicatorView.swift */; };
+		0E6E609C1D8039D9870DE85DA6AB5F0D /* Pods-StyleTransfer-StyleTransferUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0CB4C392F98D2B9B5E519B191A3109 /* Pods-StyleTransfer-StyleTransferUITests-dummy.m */; };
+		227F575C7A4BA4B60D7CED084C9B4A3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		32DAFD5267320A0E445C44D5B0A8A3E6 /* KRActivityIndicatorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88EB08ED54AEB1E3E9E26E519621F36F /* KRActivityIndicatorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5096F679A3C80E1C90A08BC11EBE21D1 /* Pods-StyleTransfer-StyleTransferUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F62428F77FCCE17C39928B60BF0500D /* Pods-StyleTransfer-StyleTransferUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BF5CE60210BA63B24F47DA85DB6D541 /* KRProgressHUDIconType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C75CEB32604D90628A8BADDC47196FB /* KRProgressHUDIconType.swift */; };
+		5EDD32C82B9EE160E6615CEAEFCA1A15 /* KRProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F54FCEBD5646F9209D22D0FEA9419E /* KRProgressHUD.swift */; };
+		664296435583DFE0E7F51D03A05D5E46 /* KRActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 414BB8BB79A61C51CA21252C85CF4443 /* KRActivityIndicatorView-dummy.m */; };
+		6AFBDA528227CA2AD03839334AC402E6 /* Pods-StyleTransferTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0B824D350A712592238E456980AC89 /* Pods-StyleTransferTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B527DB69280CF80AABF664A88202E84 /* KRProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E70566F6AA938658E7C92C8C57250D07 /* KRProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EEC5F5AF440AE4B9A69145A1F79412C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		C919BD9EE77020151EB20B61F7C8B5FF /* Pods-StyleTransfer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1388AD7BAC3F3A2354C12F02DDC2018A /* Pods-StyleTransfer-dummy.m */; };
-		E4DB1E356467574BC62B821473024B08 /* Pods-StyleTransfer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65FB3D981CA8840732996B57D82C0E1B /* Pods-StyleTransfer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFB8FF87E5A93DABAA69F57494BAF938 /* Pods-StyleTransferTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA3394443EF944BE604E4662B28936 /* Pods-StyleTransferTests-dummy.m */; };
+		A35A11B2A4CFE3EC14B437588D9C3B60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A59645A7884F87BA5BF6AB93E688901B /* InnerKRProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B122525E27BFF2D769E6EE8C8422D05 /* InnerKRProgressHUD.swift */; };
+		A5AA32EAB9F1F5A1E9DF13FCDEA4FD7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B49E488443344F783D07EE890B5DDAB7 /* Pods-StyleTransfer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FED6B4A031F7ADDAA96D529D0537E7B9 /* Pods-StyleTransfer-dummy.m */; };
+		B4EF5AB443054A968DA76A5EB25E3E07 /* Pods-StyleTransfer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A073E4E90DF6A41C53EF290D58D52810 /* Pods-StyleTransfer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C21ED0B4C9C617089241298BB41D2BF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DFB95248137010B96366E1E49B8221CE /* KRActivityIndicatorViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C4BB58463995636C6627189C7A8E6B /* KRActivityIndicatorViewStyle.swift */; };
+		E5734FE2E4663F4C9E7ED8CECC38D2F2 /* KRProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC97E841C6BD042A7B9A9E6422CD64A /* KRProgressHUD-dummy.m */; };
+		EA9307BFC6EC7DB48CC7944D87102096 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560A1D20048DDD783FCE6ECB69F6089E /* Extensions.swift */; };
+		EE468DF777E82A8AB41ED7D7289B9B9C /* KRProgressHUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6CDAF6BD46393D72B841F65C12FC7D /* KRProgressHUDViewController.swift */; };
+		F5C7CECF1E3E73AFEC9547F5AAA24730 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB993BB47D9687A3C1D6237069B52F4 /* Extensions.swift */; };
+		FFB8FF87E5A93DABAA69F57494BAF938 /* Pods-StyleTransferTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB41A72BF7A8C3F1C86A81ED1D7F57CC /* Pods-StyleTransferTests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0BD7317B67CAE529E1B2E12AD3C48C76 /* PBXContainerItemProxy */ = {
+		0AFDAA5C832E3A39D95B48AF72722D09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F7A1E5A05AF87570E2873C5F725E2CB;
+			remoteInfo = KRActivityIndicatorView;
+		};
+		0FE7660AF8B74361A08C67F28686E82B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA4681533D6AA601F9C9E2A116B7472C;
+			remoteInfo = KRProgressHUD;
+		};
+		20F780D413C286EA5FB945A898B76FA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F7A1E5A05AF87570E2873C5F725E2CB;
+			remoteInfo = KRActivityIndicatorView;
+		};
+		24806D76D7D50C689C1680AC38B802A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8DE72D0212619A99A3739CB1BFE759F8;
 			remoteInfo = "Pods-StyleTransfer";
 		};
+		2A675F03382E7735CEAD56138BB96B36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F7A1E5A05AF87570E2873C5F725E2CB;
+			remoteInfo = KRActivityIndicatorView;
+		};
+		BC527E42F1A98DFD3EFE73112DD0E975 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA4681533D6AA601F9C9E2A116B7472C;
+			remoteInfo = KRProgressHUD;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		023F195117C3AC319738893FBED63F7E /* Pods-StyleTransfer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StyleTransfer-acknowledgements.plist"; sourceTree = "<group>"; };
-		0BEA3394443EF944BE604E4662B28936 /* Pods-StyleTransferTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StyleTransferTests-dummy.m"; sourceTree = "<group>"; };
-		101F7755FFD443E2165ABCD7379FFE93 /* Pods-StyleTransferTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StyleTransferTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1388AD7BAC3F3A2354C12F02DDC2018A /* Pods-StyleTransfer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StyleTransfer-dummy.m"; sourceTree = "<group>"; };
-		3BC8A24C42C38634A2E4B2741372A023 /* Pods-StyleTransfer-StyleTransferUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StyleTransfer-StyleTransferUITests-dummy.m"; sourceTree = "<group>"; };
-		3CDDE08D8F8F4CE8D17004432E8397A1 /* Pods-StyleTransfer-StyleTransferUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StyleTransfer-StyleTransferUITests.modulemap"; sourceTree = "<group>"; };
-		3D9826185D82EF4319B7316563373B1E /* Pods-StyleTransfer-StyleTransferUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StyleTransfer-StyleTransferUITests-Info.plist"; sourceTree = "<group>"; };
+		060E2BC1605AF50B7BAE484282D72753 /* KRActivityIndicatorView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KRActivityIndicatorView.release.xcconfig; sourceTree = "<group>"; };
+		0A99A4E9B3D5464F2EB052185AE0DB92 /* KRActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRActivityIndicatorView.swift; path = KRActivityIndicatorView/Classes/KRActivityIndicatorView.swift; sourceTree = "<group>"; };
+		0B0CB4C392F98D2B9B5E519B191A3109 /* Pods-StyleTransfer-StyleTransferUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StyleTransfer-StyleTransferUITests-dummy.m"; sourceTree = "<group>"; };
+		0B6CDAF6BD46393D72B841F65C12FC7D /* KRProgressHUDViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRProgressHUDViewController.swift; path = KRProgressHUD/Classes/KRProgressHUDViewController.swift; sourceTree = "<group>"; };
+		0C0B824D350A712592238E456980AC89 /* Pods-StyleTransferTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StyleTransferTests-umbrella.h"; sourceTree = "<group>"; };
+		17F3DF1C80792886F10B37490E13C797 /* Pods-StyleTransfer-StyleTransferUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StyleTransfer-StyleTransferUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1C33CB84138510317C9CFF8E19C47C23 /* KRProgressHUD */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KRProgressHUD; path = KRProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C66529170620731BFAB5008CEC9D25F /* Pods-StyleTransferTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StyleTransferTests-Info.plist"; sourceTree = "<group>"; };
+		1C75CEB32604D90628A8BADDC47196FB /* KRProgressHUDIconType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRProgressHUDIconType.swift; path = KRProgressHUD/Classes/KRProgressHUDIconType.swift; sourceTree = "<group>"; };
+		29BCEB0266361AA6435D18B33F521065 /* Pods-StyleTransfer-StyleTransferUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StyleTransfer-StyleTransferUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2DCEB1FCAB0F71B49BD35DF1E2A04084 /* KRProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KRProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
+		33F54FCEBD5646F9209D22D0FEA9419E /* KRProgressHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRProgressHUD.swift; path = KRProgressHUD/Classes/KRProgressHUD.swift; sourceTree = "<group>"; };
+		35704C00C54C44D91241978FD9E526EC /* Pods-StyleTransferTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StyleTransferTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		414BB8BB79A61C51CA21252C85CF4443 /* KRActivityIndicatorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KRActivityIndicatorView-dummy.m"; sourceTree = "<group>"; };
+		456A0EFEBBFCE038E8F6A4C0205FE4AD /* Pods-StyleTransfer-StyleTransferUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StyleTransfer-StyleTransferUITests.modulemap"; sourceTree = "<group>"; };
+		45A19654BCCE11CCF5B810F6788A222C /* Pods-StyleTransferTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StyleTransferTests.modulemap"; sourceTree = "<group>"; };
+		4B122525E27BFF2D769E6EE8C8422D05 /* InnerKRProgressHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InnerKRProgressHUD.swift; path = KRProgressHUD/Classes/InnerKRProgressHUD.swift; sourceTree = "<group>"; };
+		4C3E062D725052AA8F9D84A175A52D7F /* KRActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KRActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
+		4FB4A2477C160594FBE3991CB951846E /* KRProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KRProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		5371883B7D2D707FAE84B434246CD136 /* Pods-StyleTransferTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StyleTransferTests.release.xcconfig"; sourceTree = "<group>"; };
 		538BB1B1E40C115FBBE620B42F85E3C8 /* Pods-StyleTransfer-StyleTransferUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-StyleTransfer-StyleTransferUITests"; path = Pods_StyleTransfer_StyleTransferUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		553F7A0ED52E0827A912154B58CF8779 /* Pods-StyleTransfer-StyleTransferUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StyleTransfer-StyleTransferUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5D6FDA5B8FBFF5D99E6233C32B3F878D /* Pods-StyleTransferTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StyleTransferTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		64858C524450AD8BD818B3A1D7ACA2D1 /* Pods-StyleTransfer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StyleTransfer.debug.xcconfig"; sourceTree = "<group>"; };
-		65FB3D981CA8840732996B57D82C0E1B /* Pods-StyleTransfer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StyleTransfer-umbrella.h"; sourceTree = "<group>"; };
-		6CAC5B1F8BC8EFE2DD68451E2B715D26 /* Pods-StyleTransferTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StyleTransferTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		560A1D20048DDD783FCE6ECB69F6089E /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = KRActivityIndicatorView/Classes/Extensions.swift; sourceTree = "<group>"; };
+		61B899D006E0ED2E36BE59CAEFC00F4A /* KRProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KRProgressHUD.modulemap; sourceTree = "<group>"; };
+		65A1A408976A97E500C42C040E94DD58 /* Pods-StyleTransfer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StyleTransfer.debug.xcconfig"; sourceTree = "<group>"; };
+		699468BE0B48315FEABC3D0879421695 /* Pods-StyleTransfer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StyleTransfer-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6D5F7B9D11756DC718B627664B2CFC72 /* Pods-StyleTransfer */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-StyleTransfer"; path = Pods_StyleTransfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F84E948F11AD59E334F723F0FE1DFB0 /* Pods-StyleTransfer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StyleTransfer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6FC97E841C6BD042A7B9A9E6422CD64A /* KRProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KRProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		8D88088C222A61F8F6D9FDC44E9091B4 /* Pods-StyleTransferTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StyleTransferTests.release.xcconfig"; sourceTree = "<group>"; };
+		73C4BB58463995636C6627189C7A8E6B /* KRActivityIndicatorViewStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRActivityIndicatorViewStyle.swift; path = KRActivityIndicatorView/Classes/KRActivityIndicatorViewStyle.swift; sourceTree = "<group>"; };
+		88EB08ED54AEB1E3E9E26E519621F36F /* KRActivityIndicatorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KRActivityIndicatorView-umbrella.h"; sourceTree = "<group>"; };
+		8F62428F77FCCE17C39928B60BF0500D /* Pods-StyleTransfer-StyleTransferUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StyleTransfer-StyleTransferUITests-umbrella.h"; sourceTree = "<group>"; };
+		9258ECC23A4C8B0274C7A6DF69DDFE95 /* KRActivityIndicatorView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KRActivityIndicatorView; path = KRActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE8A79C52C5BBD87AE711C135BC0DF2 /* Pods-StyleTransferTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-StyleTransferTests"; path = Pods_StyleTransferTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CFF7E34F88419833F1A70E309F3B511 /* Pods-StyleTransfer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StyleTransfer-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BC581764001C0EA35325209B9748DA70 /* Pods-StyleTransferTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StyleTransferTests.modulemap"; sourceTree = "<group>"; };
-		C7957600B49A068B4AB033C83650B04F /* Pods-StyleTransfer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StyleTransfer.modulemap"; sourceTree = "<group>"; };
-		D09F03716B2455126A346CD24679FE39 /* Pods-StyleTransfer-StyleTransferUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StyleTransfer-StyleTransferUITests-umbrella.h"; sourceTree = "<group>"; };
-		D680AB170280DB7D3261AB9C305AE6FB /* Pods-StyleTransferTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StyleTransferTests-umbrella.h"; sourceTree = "<group>"; };
-		D884546DCF1A7934A8EC3955912BCF4D /* Pods-StyleTransfer-StyleTransferUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StyleTransfer-StyleTransferUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E247568AA1FBE0EF4FD2F5273EF46FF3 /* Pods-StyleTransfer-StyleTransferUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StyleTransfer-StyleTransferUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E4E66153918DBAA2E4F996BB906907DF /* Pods-StyleTransfer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StyleTransfer-Info.plist"; sourceTree = "<group>"; };
-		F09D29F25CBCA55B7ADAB1636D2DE489 /* Pods-StyleTransfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StyleTransfer.release.xcconfig"; sourceTree = "<group>"; };
-		F13AD522F611B8785D7244D9B9C6490B /* Pods-StyleTransfer-StyleTransferUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StyleTransfer-StyleTransferUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F95D45CC6A6782F23173FBD23B48A483 /* Pods-StyleTransferTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StyleTransferTests-Info.plist"; sourceTree = "<group>"; };
+		A073E4E90DF6A41C53EF290D58D52810 /* Pods-StyleTransfer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StyleTransfer-umbrella.h"; sourceTree = "<group>"; };
+		AD8A0C438369568A93E21DC0045A7858 /* Pods-StyleTransfer-StyleTransferUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StyleTransfer-StyleTransferUITests-frameworks.sh"; sourceTree = "<group>"; };
+		ADC2FD301DD4B16CE392ACCF4ED2D199 /* Pods-StyleTransferTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StyleTransferTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B10C4EB8C649E4C51E2D5E8E64C5DCEF /* KRProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KRProgressHUD.release.xcconfig; sourceTree = "<group>"; };
+		B4BACF3BF796C7BCFF63EEE9528BF4E6 /* Pods-StyleTransfer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StyleTransfer-frameworks.sh"; sourceTree = "<group>"; };
+		B72D83D96802D360BD7AD03CB22D74D1 /* Pods-StyleTransfer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StyleTransfer-acknowledgements.plist"; sourceTree = "<group>"; };
+		C85EE44FEDFC19B2D1B67B321BED6A6D /* Pods-StyleTransfer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StyleTransfer.modulemap"; sourceTree = "<group>"; };
+		CAB993BB47D9687A3C1D6237069B52F4 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = KRProgressHUD/Classes/Extensions.swift; sourceTree = "<group>"; };
+		D38BD5D563142CB0EB3423C427A29D2B /* KRActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KRActivityIndicatorView.modulemap; sourceTree = "<group>"; };
+		E26F1B8E4365B99C12B7C96267D1D221 /* KRProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KRProgressHUD-Info.plist"; sourceTree = "<group>"; };
+		E283FD1CD0043F1600792133F91E9DAA /* KRActivityIndicatorView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KRActivityIndicatorView-Info.plist"; sourceTree = "<group>"; };
+		E2945A1E5F8AB54B9B5E24A966B37FA8 /* Pods-StyleTransfer-StyleTransferUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StyleTransfer-StyleTransferUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E29E98F6E57D0C5484E8C74E525C9026 /* Pods-StyleTransfer-StyleTransferUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StyleTransfer-StyleTransferUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3A74383EA15AE7F3F651591E3766166 /* KRActivityIndicatorView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KRActivityIndicatorView.debug.xcconfig; sourceTree = "<group>"; };
+		E70566F6AA938658E7C92C8C57250D07 /* KRProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KRProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		F5690418A03CA592F7A0F5ACED4A5170 /* Pods-StyleTransfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StyleTransfer.release.xcconfig"; sourceTree = "<group>"; };
+		F60BB7287C9A454F7818CDFCF8F1EF7B /* Pods-StyleTransfer-StyleTransferUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StyleTransfer-StyleTransferUITests-Info.plist"; sourceTree = "<group>"; };
+		F71AF3565087C0D2D155178F9E8BB85E /* Pods-StyleTransferTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StyleTransferTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB41A72BF7A8C3F1C86A81ED1D7F57CC /* Pods-StyleTransferTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StyleTransferTests-dummy.m"; sourceTree = "<group>"; };
+		FED6B4A031F7ADDAA96D529D0537E7B9 /* Pods-StyleTransfer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StyleTransfer-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AF515535CC6AE4BF6C78792FE2D72B66 /* Frameworks */ = {
+		51C07760CBC3298842629E20CB5EDFFB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D9E061642372940254B4C12CEBE0B9D /* Foundation.framework in Frameworks */,
+				A35A11B2A4CFE3EC14B437588D9C3B60 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63AD80E8C1870B662796B5A871D66C8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5AA32EAB9F1F5A1E9DF13FCDEA4FD7D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AB39F144A72F040D2C21D2F2A3CA138 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				227F575C7A4BA4B60D7CED084C9B4A3C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,17 +168,68 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EEE716DD3044A2E2EEB465C511898414 /* Frameworks */ = {
+		BD586B9E4D7076544C646EC8482E6164 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F3723F7E463A0B2BC9FFB7178A2DA7F /* Foundation.framework in Frameworks */,
+				C21ED0B4C9C617089241298BB41D2BF0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F22B5464A68FF5D2FD77F31950A541F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				61B899D006E0ED2E36BE59CAEFC00F4A /* KRProgressHUD.modulemap */,
+				6FC97E841C6BD042A7B9A9E6422CD64A /* KRProgressHUD-dummy.m */,
+				E26F1B8E4365B99C12B7C96267D1D221 /* KRProgressHUD-Info.plist */,
+				4FB4A2477C160594FBE3991CB951846E /* KRProgressHUD-prefix.pch */,
+				E70566F6AA938658E7C92C8C57250D07 /* KRProgressHUD-umbrella.h */,
+				2DCEB1FCAB0F71B49BD35DF1E2A04084 /* KRProgressHUD.debug.xcconfig */,
+				B10C4EB8C649E4C51E2D5E8E64C5DCEF /* KRProgressHUD.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KRProgressHUD";
+			sourceTree = "<group>";
+		};
+		133DDD66449356413513E9B2C8FDA187 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D38BD5D563142CB0EB3423C427A29D2B /* KRActivityIndicatorView.modulemap */,
+				414BB8BB79A61C51CA21252C85CF4443 /* KRActivityIndicatorView-dummy.m */,
+				E283FD1CD0043F1600792133F91E9DAA /* KRActivityIndicatorView-Info.plist */,
+				4C3E062D725052AA8F9D84A175A52D7F /* KRActivityIndicatorView-prefix.pch */,
+				88EB08ED54AEB1E3E9E26E519621F36F /* KRActivityIndicatorView-umbrella.h */,
+				E3A74383EA15AE7F3F651591E3766166 /* KRActivityIndicatorView.debug.xcconfig */,
+				060E2BC1605AF50B7BAE484282D72753 /* KRActivityIndicatorView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KRActivityIndicatorView";
+			sourceTree = "<group>";
+		};
+		1E8095D42FD1E985A2426C7FDB40487A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9258ECC23A4C8B0274C7A6DF69DDFE95 /* KRActivityIndicatorView */,
+				1C33CB84138510317C9CFF8E19C47C23 /* KRProgressHUD */,
+				6D5F7B9D11756DC718B627664B2CFC72 /* Pods-StyleTransfer */,
+				538BB1B1E40C115FBBE620B42F85E3C8 /* Pods-StyleTransfer-StyleTransferUITests */,
+				9CE8A79C52C5BBD87AE711C135BC0DF2 /* Pods-StyleTransferTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D4FFA5A8CE6953C028B41D162567DFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5B2CC27A49597D41ED40EC87B858C2E /* KRActivityIndicatorView */,
+				C63A58090CDDA2C6CEE1387D654E0EA1 /* KRProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,56 +238,78 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6146C34087C8535D1768EA70EB6D502D /* Targets Support Files */ = {
+		6062C9B0F31AB8BBC5B6D804B8000F0E /* Pods-StyleTransferTests */ = {
 			isa = PBXGroup;
 			children = (
-				EC84BCC6CF409BD05633667BD414DA01 /* Pods-StyleTransfer */,
-				71F75F3342565ADC47B48774CF6AEA89 /* Pods-StyleTransfer-StyleTransferUITests */,
-				C22612C0F1FC8CDF07BE4B4937841ECD /* Pods-StyleTransferTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		71F75F3342565ADC47B48774CF6AEA89 /* Pods-StyleTransfer-StyleTransferUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3CDDE08D8F8F4CE8D17004432E8397A1 /* Pods-StyleTransfer-StyleTransferUITests.modulemap */,
-				E247568AA1FBE0EF4FD2F5273EF46FF3 /* Pods-StyleTransfer-StyleTransferUITests-acknowledgements.markdown */,
-				553F7A0ED52E0827A912154B58CF8779 /* Pods-StyleTransfer-StyleTransferUITests-acknowledgements.plist */,
-				3BC8A24C42C38634A2E4B2741372A023 /* Pods-StyleTransfer-StyleTransferUITests-dummy.m */,
-				3D9826185D82EF4319B7316563373B1E /* Pods-StyleTransfer-StyleTransferUITests-Info.plist */,
-				D09F03716B2455126A346CD24679FE39 /* Pods-StyleTransfer-StyleTransferUITests-umbrella.h */,
-				D884546DCF1A7934A8EC3955912BCF4D /* Pods-StyleTransfer-StyleTransferUITests.debug.xcconfig */,
-				F13AD522F611B8785D7244D9B9C6490B /* Pods-StyleTransfer-StyleTransferUITests.release.xcconfig */,
-			);
-			name = "Pods-StyleTransfer-StyleTransferUITests";
-			path = "Target Support Files/Pods-StyleTransfer-StyleTransferUITests";
-			sourceTree = "<group>";
-		};
-		C22612C0F1FC8CDF07BE4B4937841ECD /* Pods-StyleTransferTests */ = {
-			isa = PBXGroup;
-			children = (
-				BC581764001C0EA35325209B9748DA70 /* Pods-StyleTransferTests.modulemap */,
-				6CAC5B1F8BC8EFE2DD68451E2B715D26 /* Pods-StyleTransferTests-acknowledgements.markdown */,
-				5D6FDA5B8FBFF5D99E6233C32B3F878D /* Pods-StyleTransferTests-acknowledgements.plist */,
-				0BEA3394443EF944BE604E4662B28936 /* Pods-StyleTransferTests-dummy.m */,
-				F95D45CC6A6782F23173FBD23B48A483 /* Pods-StyleTransferTests-Info.plist */,
-				D680AB170280DB7D3261AB9C305AE6FB /* Pods-StyleTransferTests-umbrella.h */,
-				101F7755FFD443E2165ABCD7379FFE93 /* Pods-StyleTransferTests.debug.xcconfig */,
-				8D88088C222A61F8F6D9FDC44E9091B4 /* Pods-StyleTransferTests.release.xcconfig */,
+				45A19654BCCE11CCF5B810F6788A222C /* Pods-StyleTransferTests.modulemap */,
+				35704C00C54C44D91241978FD9E526EC /* Pods-StyleTransferTests-acknowledgements.markdown */,
+				ADC2FD301DD4B16CE392ACCF4ED2D199 /* Pods-StyleTransferTests-acknowledgements.plist */,
+				FB41A72BF7A8C3F1C86A81ED1D7F57CC /* Pods-StyleTransferTests-dummy.m */,
+				1C66529170620731BFAB5008CEC9D25F /* Pods-StyleTransferTests-Info.plist */,
+				0C0B824D350A712592238E456980AC89 /* Pods-StyleTransferTests-umbrella.h */,
+				F71AF3565087C0D2D155178F9E8BB85E /* Pods-StyleTransferTests.debug.xcconfig */,
+				5371883B7D2D707FAE84B434246CD136 /* Pods-StyleTransferTests.release.xcconfig */,
 			);
 			name = "Pods-StyleTransferTests";
 			path = "Target Support Files/Pods-StyleTransferTests";
 			sourceTree = "<group>";
 		};
-		CBA9ADE4E86DB01E24622725FD9820F5 /* Products */ = {
+		74A98E47C48B73543E38AAC165143091 /* Pods-StyleTransfer-StyleTransferUITests */ = {
 			isa = PBXGroup;
 			children = (
-				6D5F7B9D11756DC718B627664B2CFC72 /* Pods-StyleTransfer */,
-				538BB1B1E40C115FBBE620B42F85E3C8 /* Pods-StyleTransfer-StyleTransferUITests */,
-				9CE8A79C52C5BBD87AE711C135BC0DF2 /* Pods-StyleTransferTests */,
+				456A0EFEBBFCE038E8F6A4C0205FE4AD /* Pods-StyleTransfer-StyleTransferUITests.modulemap */,
+				17F3DF1C80792886F10B37490E13C797 /* Pods-StyleTransfer-StyleTransferUITests-acknowledgements.markdown */,
+				29BCEB0266361AA6435D18B33F521065 /* Pods-StyleTransfer-StyleTransferUITests-acknowledgements.plist */,
+				0B0CB4C392F98D2B9B5E519B191A3109 /* Pods-StyleTransfer-StyleTransferUITests-dummy.m */,
+				AD8A0C438369568A93E21DC0045A7858 /* Pods-StyleTransfer-StyleTransferUITests-frameworks.sh */,
+				F60BB7287C9A454F7818CDFCF8F1EF7B /* Pods-StyleTransfer-StyleTransferUITests-Info.plist */,
+				8F62428F77FCCE17C39928B60BF0500D /* Pods-StyleTransfer-StyleTransferUITests-umbrella.h */,
+				E29E98F6E57D0C5484E8C74E525C9026 /* Pods-StyleTransfer-StyleTransferUITests.debug.xcconfig */,
+				E2945A1E5F8AB54B9B5E24A966B37FA8 /* Pods-StyleTransfer-StyleTransferUITests.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-StyleTransfer-StyleTransferUITests";
+			path = "Target Support Files/Pods-StyleTransfer-StyleTransferUITests";
+			sourceTree = "<group>";
+		};
+		ABD6ECD6BF4964A1609B88060F830EE4 /* Pods-StyleTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				C85EE44FEDFC19B2D1B67B321BED6A6D /* Pods-StyleTransfer.modulemap */,
+				699468BE0B48315FEABC3D0879421695 /* Pods-StyleTransfer-acknowledgements.markdown */,
+				B72D83D96802D360BD7AD03CB22D74D1 /* Pods-StyleTransfer-acknowledgements.plist */,
+				FED6B4A031F7ADDAA96D529D0537E7B9 /* Pods-StyleTransfer-dummy.m */,
+				B4BACF3BF796C7BCFF63EEE9528BF4E6 /* Pods-StyleTransfer-frameworks.sh */,
+				9CFF7E34F88419833F1A70E309F3B511 /* Pods-StyleTransfer-Info.plist */,
+				A073E4E90DF6A41C53EF290D58D52810 /* Pods-StyleTransfer-umbrella.h */,
+				65A1A408976A97E500C42C040E94DD58 /* Pods-StyleTransfer.debug.xcconfig */,
+				F5690418A03CA592F7A0F5ACED4A5170 /* Pods-StyleTransfer.release.xcconfig */,
+			);
+			name = "Pods-StyleTransfer";
+			path = "Target Support Files/Pods-StyleTransfer";
+			sourceTree = "<group>";
+		};
+		BBE63CF5840CE6C76B35DCACAE05C00F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6ECD6BF4964A1609B88060F830EE4 /* Pods-StyleTransfer */,
+				74A98E47C48B73543E38AAC165143091 /* Pods-StyleTransfer-StyleTransferUITests */,
+				6062C9B0F31AB8BBC5B6D804B8000F0E /* Pods-StyleTransferTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C63A58090CDDA2C6CEE1387D654E0EA1 /* KRProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				CAB993BB47D9687A3C1D6237069B52F4 /* Extensions.swift */,
+				4B122525E27BFF2D769E6EE8C8422D05 /* InnerKRProgressHUD.swift */,
+				33F54FCEBD5646F9209D22D0FEA9419E /* KRProgressHUD.swift */,
+				1C75CEB32604D90628A8BADDC47196FB /* KRProgressHUDIconType.swift */,
+				0B6CDAF6BD46393D72B841F65C12FC7D /* KRProgressHUDViewController.swift */,
+				0F22B5464A68FF5D2FD77F31950A541F /* Support Files */,
+			);
+			name = KRProgressHUD;
+			path = KRProgressHUD;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -153,8 +317,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				CBA9ADE4E86DB01E24622725FD9820F5 /* Products */,
-				6146C34087C8535D1768EA70EB6D502D /* Targets Support Files */,
+				4D4FFA5A8CE6953C028B41D162567DFC /* Pods */,
+				1E8095D42FD1E985A2426C7FDB40487A /* Products */,
+				BBE63CF5840CE6C76B35DCACAE05C00F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,38 +331,50 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EC84BCC6CF409BD05633667BD414DA01 /* Pods-StyleTransfer */ = {
+		F5B2CC27A49597D41ED40EC87B858C2E /* KRActivityIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
-				C7957600B49A068B4AB033C83650B04F /* Pods-StyleTransfer.modulemap */,
-				6F84E948F11AD59E334F723F0FE1DFB0 /* Pods-StyleTransfer-acknowledgements.markdown */,
-				023F195117C3AC319738893FBED63F7E /* Pods-StyleTransfer-acknowledgements.plist */,
-				1388AD7BAC3F3A2354C12F02DDC2018A /* Pods-StyleTransfer-dummy.m */,
-				E4E66153918DBAA2E4F996BB906907DF /* Pods-StyleTransfer-Info.plist */,
-				65FB3D981CA8840732996B57D82C0E1B /* Pods-StyleTransfer-umbrella.h */,
-				64858C524450AD8BD818B3A1D7ACA2D1 /* Pods-StyleTransfer.debug.xcconfig */,
-				F09D29F25CBCA55B7ADAB1636D2DE489 /* Pods-StyleTransfer.release.xcconfig */,
+				560A1D20048DDD783FCE6ECB69F6089E /* Extensions.swift */,
+				0A99A4E9B3D5464F2EB052185AE0DB92 /* KRActivityIndicatorView.swift */,
+				73C4BB58463995636C6627189C7A8E6B /* KRActivityIndicatorViewStyle.swift */,
+				133DDD66449356413513E9B2C8FDA187 /* Support Files */,
 			);
-			name = "Pods-StyleTransfer";
-			path = "Target Support Files/Pods-StyleTransfer";
+			name = KRActivityIndicatorView;
+			path = KRActivityIndicatorView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3A5A672E3F9F31D3D92B80C67B2433F5 /* Headers */ = {
+		0E829EA627107E8158CAFCF16958835A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4DB1E356467574BC62B821473024B08 /* Pods-StyleTransfer-umbrella.h in Headers */,
+				32DAFD5267320A0E445C44D5B0A8A3E6 /* KRActivityIndicatorView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A19D9AF7EC498E6EFEA642F3D7FC65E4 /* Headers */ = {
+		8B77FA1BE09166C6F94AA560DB439F5E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1574C119D904F07D1191E56E2658C76A /* Pods-StyleTransfer-StyleTransferUITests-umbrella.h in Headers */,
+				B4EF5AB443054A968DA76A5EB25E3E07 /* Pods-StyleTransfer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9903F28C748F289A483EE102A783BBF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5096F679A3C80E1C90A08BC11EBE21D1 /* Pods-StyleTransfer-StyleTransferUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB22DB93A9DCF37D720EEBA863F2A1BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B527DB69280CF80AABF664A88202E84 /* KRProgressHUD-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,25 +401,45 @@
 			buildRules = (
 			);
 			dependencies = (
-				BFF7813B51F7AF0444EB67C53418ABFB /* PBXTargetDependency */,
+				EE7A57B44588C037A447CAFCDD95A537 /* PBXTargetDependency */,
 			);
 			name = "Pods-StyleTransferTests";
 			productName = Pods_StyleTransferTests;
 			productReference = 9CE8A79C52C5BBD87AE711C135BC0DF2 /* Pods-StyleTransferTests */;
 			productType = "com.apple.product-type.framework";
 		};
-		7DACAB2A2FA9EEF4F10AA1322AAF5642 /* Pods-StyleTransfer-StyleTransferUITests */ = {
+		4F7A1E5A05AF87570E2873C5F725E2CB /* KRActivityIndicatorView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B57FC9BA7E0396C8CAB4DA6D3192C32 /* Build configuration list for PBXNativeTarget "Pods-StyleTransfer-StyleTransferUITests" */;
+			buildConfigurationList = ED1F62E459590C11B6D6F75CE6FC6295 /* Build configuration list for PBXNativeTarget "KRActivityIndicatorView" */;
 			buildPhases = (
-				A19D9AF7EC498E6EFEA642F3D7FC65E4 /* Headers */,
-				C55ABA6C59E55DB75F3A60ED8D7EDDEC /* Sources */,
-				EEE716DD3044A2E2EEB465C511898414 /* Frameworks */,
-				392623F967AD8E0E22A8BA62727DA670 /* Resources */,
+				0E829EA627107E8158CAFCF16958835A /* Headers */,
+				042D193EACCED2D20ED31518986F6AC8 /* Sources */,
+				8AB39F144A72F040D2C21D2F2A3CA138 /* Frameworks */,
+				90842901C6BA0BA008A60BD1AA069A01 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = KRActivityIndicatorView;
+			productName = KRActivityIndicatorView;
+			productReference = 9258ECC23A4C8B0274C7A6DF69DDFE95 /* KRActivityIndicatorView */;
+			productType = "com.apple.product-type.framework";
+		};
+		7DACAB2A2FA9EEF4F10AA1322AAF5642 /* Pods-StyleTransfer-StyleTransferUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87CDC3719C8961F1BCB0FFC62DFDC0A9 /* Build configuration list for PBXNativeTarget "Pods-StyleTransfer-StyleTransferUITests" */;
+			buildPhases = (
+				B9903F28C748F289A483EE102A783BBF /* Headers */,
+				1A2450030355617A4DA5236F94B7C123 /* Sources */,
+				51C07760CBC3298842629E20CB5EDFFB /* Frameworks */,
+				69FA1121E68953C2B79D37F2DDCDA8EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DED4957F5E5E77D82A6A4752A69555F0 /* PBXTargetDependency */,
+				4AB0A14940FEFE9B12E05FC3B512BD50 /* PBXTargetDependency */,
 			);
 			name = "Pods-StyleTransfer-StyleTransferUITests";
 			productName = Pods_StyleTransfer_StyleTransferUITests;
@@ -251,20 +448,41 @@
 		};
 		8DE72D0212619A99A3739CB1BFE759F8 /* Pods-StyleTransfer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BDDE92F474F4CAE96F136657C60E9AC7 /* Build configuration list for PBXNativeTarget "Pods-StyleTransfer" */;
+			buildConfigurationList = 2AF74AE1517C93E6DA7719E12E773AF5 /* Build configuration list for PBXNativeTarget "Pods-StyleTransfer" */;
 			buildPhases = (
-				3A5A672E3F9F31D3D92B80C67B2433F5 /* Headers */,
-				8774ABFE56F3B2F0B8913E4A9809A06A /* Sources */,
-				AF515535CC6AE4BF6C78792FE2D72B66 /* Frameworks */,
-				AC81A620A593BCB38F9F0336F7B2F453 /* Resources */,
+				8B77FA1BE09166C6F94AA560DB439F5E /* Headers */,
+				48E7DF933666AA8B21D0DF565AE55089 /* Sources */,
+				63AD80E8C1870B662796B5A871D66C8D /* Frameworks */,
+				2259DEAE4578B172F1DBAE56020D703B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C2ED3F4D68DEB0C6652E2F0ADC5FB33C /* PBXTargetDependency */,
+				462E1959C9E208AA6B50B3CC69EBCD9D /* PBXTargetDependency */,
 			);
 			name = "Pods-StyleTransfer";
 			productName = Pods_StyleTransfer;
 			productReference = 6D5F7B9D11756DC718B627664B2CFC72 /* Pods-StyleTransfer */;
+			productType = "com.apple.product-type.framework";
+		};
+		BA4681533D6AA601F9C9E2A116B7472C /* KRProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE46D50F7142469FB4F76946987DE8F0 /* Build configuration list for PBXNativeTarget "KRProgressHUD" */;
+			buildPhases = (
+				BB22DB93A9DCF37D720EEBA863F2A1BA /* Headers */,
+				E9542941DD8395F63154CCF9F551D523 /* Sources */,
+				BD586B9E4D7076544C646EC8482E6164 /* Frameworks */,
+				58ADCC2540CD6448AF052A92ABF41638 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C882B4CD295AA94BA1258D03431C76D /* PBXTargetDependency */,
+			);
+			name = KRProgressHUD;
+			productName = KRProgressHUD;
+			productReference = 1C33CB84138510317C9CFF8E19C47C23 /* KRProgressHUD */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -285,10 +503,12 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = CBA9ADE4E86DB01E24622725FD9820F5 /* Products */;
+			productRefGroup = 1E8095D42FD1E985A2426C7FDB40487A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				4F7A1E5A05AF87570E2873C5F725E2CB /* KRActivityIndicatorView */,
+				BA4681533D6AA601F9C9E2A116B7472C /* KRProgressHUD */,
 				8DE72D0212619A99A3739CB1BFE759F8 /* Pods-StyleTransfer */,
 				7DACAB2A2FA9EEF4F10AA1322AAF5642 /* Pods-StyleTransfer-StyleTransferUITests */,
 				31F2BE9C5590715DABCEC3B4F1731745 /* Pods-StyleTransferTests */,
@@ -297,14 +517,28 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		392623F967AD8E0E22A8BA62727DA670 /* Resources */ = {
+		2259DEAE4578B172F1DBAE56020D703B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC81A620A593BCB38F9F0336F7B2F453 /* Resources */ = {
+		58ADCC2540CD6448AF052A92ABF41638 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69FA1121E68953C2B79D37F2DDCDA8EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90842901C6BA0BA008A60BD1AA069A01 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,19 +555,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8774ABFE56F3B2F0B8913E4A9809A06A /* Sources */ = {
+		042D193EACCED2D20ED31518986F6AC8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C919BD9EE77020151EB20B61F7C8B5FF /* Pods-StyleTransfer-dummy.m in Sources */,
+				EA9307BFC6EC7DB48CC7944D87102096 /* Extensions.swift in Sources */,
+				0231BF88DE78D1AF701640162F641EF1 /* KRActivityIndicatorView.swift in Sources */,
+				664296435583DFE0E7F51D03A05D5E46 /* KRActivityIndicatorView-dummy.m in Sources */,
+				DFB95248137010B96366E1E49B8221CE /* KRActivityIndicatorViewStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C55ABA6C59E55DB75F3A60ED8D7EDDEC /* Sources */ = {
+		1A2450030355617A4DA5236F94B7C123 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				250433224210BE494DE1C7C481082928 /* Pods-StyleTransfer-StyleTransferUITests-dummy.m in Sources */,
+				0E6E609C1D8039D9870DE85DA6AB5F0D /* Pods-StyleTransfer-StyleTransferUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E7DF933666AA8B21D0DF565AE55089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49E488443344F783D07EE890B5DDAB7 /* Pods-StyleTransfer-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,24 +590,65 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9542941DD8395F63154CCF9F551D523 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C7CECF1E3E73AFEC9547F5AAA24730 /* Extensions.swift in Sources */,
+				A59645A7884F87BA5BF6AB93E688901B /* InnerKRProgressHUD.swift in Sources */,
+				5EDD32C82B9EE160E6615CEAEFCA1A15 /* KRProgressHUD.swift in Sources */,
+				E5734FE2E4663F4C9E7ED8CECC38D2F2 /* KRProgressHUD-dummy.m in Sources */,
+				5BF5CE60210BA63B24F47DA85DB6D541 /* KRProgressHUDIconType.swift in Sources */,
+				EE468DF777E82A8AB41ED7D7289B9B9C /* KRProgressHUDViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BFF7813B51F7AF0444EB67C53418ABFB /* PBXTargetDependency */ = {
+		1C882B4CD295AA94BA1258D03431C76D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KRActivityIndicatorView;
+			target = 4F7A1E5A05AF87570E2873C5F725E2CB /* KRActivityIndicatorView */;
+			targetProxy = 0AFDAA5C832E3A39D95B48AF72722D09 /* PBXContainerItemProxy */;
+		};
+		462E1959C9E208AA6B50B3CC69EBCD9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KRProgressHUD;
+			target = BA4681533D6AA601F9C9E2A116B7472C /* KRProgressHUD */;
+			targetProxy = 0FE7660AF8B74361A08C67F28686E82B /* PBXContainerItemProxy */;
+		};
+		4AB0A14940FEFE9B12E05FC3B512BD50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KRProgressHUD;
+			target = BA4681533D6AA601F9C9E2A116B7472C /* KRProgressHUD */;
+			targetProxy = BC527E42F1A98DFD3EFE73112DD0E975 /* PBXContainerItemProxy */;
+		};
+		C2ED3F4D68DEB0C6652E2F0ADC5FB33C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KRActivityIndicatorView;
+			target = 4F7A1E5A05AF87570E2873C5F725E2CB /* KRActivityIndicatorView */;
+			targetProxy = 2A675F03382E7735CEAD56138BB96B36 /* PBXContainerItemProxy */;
+		};
+		DED4957F5E5E77D82A6A4752A69555F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KRActivityIndicatorView;
+			target = 4F7A1E5A05AF87570E2873C5F725E2CB /* KRActivityIndicatorView */;
+			targetProxy = 20F780D413C286EA5FB945A898B76FA9 /* PBXContainerItemProxy */;
+		};
+		EE7A57B44588C037A447CAFCDD95A537 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-StyleTransfer";
 			target = 8DE72D0212619A99A3739CB1BFE759F8 /* Pods-StyleTransfer */;
-			targetProxy = 0BD7317B67CAE529E1B2E12AD3C48C76 /* PBXContainerItemProxy */;
+			targetProxy = 24806D76D7D50C689C1680AC38B802A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		06409C6723647FB1BED043CFC15CD191 /* Debug */ = {
+		08D3CFCD697E35B31C18946FE494E1B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D884546DCF1A7934A8EC3955912BCF4D /* Pods-StyleTransfer-StyleTransferUITests.debug.xcconfig */;
+			baseConfigurationReference = E3A74383EA15AE7F3F651591E3766166 /* KRActivityIndicatorView.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -371,35 +657,32 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-StyleTransfer-StyleTransferUITests/Pods-StyleTransfer-StyleTransferUITests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-StyleTransfer-StyleTransferUITests/Pods-StyleTransfer-StyleTransferUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView.modulemap";
+				PRODUCT_MODULE_NAME = KRActivityIndicatorView;
+				PRODUCT_NAME = KRActivityIndicatorView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		3DF5DDACFD16EA5CDE0736763EA0D96A /* Debug */ = {
+		14394C310CB55A4531D35D3A9B3D7DC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 101F7755FFD443E2165ABCD7379FFE93 /* Pods-StyleTransferTests.debug.xcconfig */;
+			baseConfigurationReference = 2DCEB1FCAB0F71B49BD35DF1E2A04084 /* KRProgressHUD.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -408,35 +691,32 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-StyleTransferTests/Pods-StyleTransferTests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/KRProgressHUD/KRProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KRProgressHUD/KRProgressHUD-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-StyleTransferTests/Pods-StyleTransferTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/KRProgressHUD/KRProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = KRProgressHUD;
+				PRODUCT_NAME = KRProgressHUD;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		7885F12F7EEB6C2BF4EE446AE1D34154 /* Release */ = {
+		2F55D1E7E4C9E701F0522643A3A6296D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D88088C222A61F8F6D9FDC44E9091B4 /* Pods-StyleTransferTests.release.xcconfig */;
+			baseConfigurationReference = 060E2BC1605AF50B7BAE484282D72753 /* KRActivityIndicatorView.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -445,23 +725,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-StyleTransferTests/Pods-StyleTransferTests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-StyleTransferTests/Pods-StyleTransferTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView.modulemap";
+				PRODUCT_MODULE_NAME = KRActivityIndicatorView;
+				PRODUCT_NAME = KRActivityIndicatorView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -469,9 +748,9 @@
 			};
 			name = Release;
 		};
-		825A2EB3B7A77B4F2A3B8B3F80DE9A7A /* Release */ = {
+		3DF5DDACFD16EA5CDE0736763EA0D96A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F13AD522F611B8785D7244D9B9C6490B /* Pods-StyleTransfer-StyleTransferUITests.release.xcconfig */;
+			baseConfigurationReference = F71AF3565087C0D2D155178F9E8BB85E /* Pods-StyleTransferTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -483,7 +762,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-StyleTransfer-StyleTransferUITests/Pods-StyleTransfer-StyleTransferUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-StyleTransferTests/Pods-StyleTransferTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -492,7 +771,116 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-StyleTransfer-StyleTransferUITests/Pods-StyleTransfer-StyleTransferUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-StyleTransferTests/Pods-StyleTransferTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		54A052D768777E04C04B053FEA692635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65A1A408976A97E500C42C040E94DD58 /* Pods-StyleTransfer.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StyleTransfer/Pods-StyleTransfer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StyleTransfer/Pods-StyleTransfer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		596739A7B2B05C885EBCC4008D91750A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B10C4EB8C649E4C51E2D5E8E64C5DCEF /* KRProgressHUD.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KRProgressHUD/KRProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KRProgressHUD/KRProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KRProgressHUD/KRProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = KRProgressHUD;
+				PRODUCT_NAME = KRProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7885F12F7EEB6C2BF4EE446AE1D34154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5371883B7D2D707FAE84B434246CD136 /* Pods-StyleTransferTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StyleTransferTests/Pods-StyleTransferTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StyleTransferTests/Pods-StyleTransferTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -635,9 +1023,9 @@
 			};
 			name = Release;
 		};
-		B350A9B93A198EC95B63AC212CC504F0 /* Debug */ = {
+		B2389A95814B534050588461DE68B2E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64858C524450AD8BD818B3A1D7ACA2D1 /* Pods-StyleTransfer.debug.xcconfig */;
+			baseConfigurationReference = E29E98F6E57D0C5484E8C74E525C9026 /* Pods-StyleTransfer-StyleTransferUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -649,7 +1037,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-StyleTransfer/Pods-StyleTransfer-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-StyleTransfer-StyleTransferUITests/Pods-StyleTransfer-StyleTransferUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -658,7 +1046,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-StyleTransfer/Pods-StyleTransfer.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-StyleTransfer-StyleTransferUITests/Pods-StyleTransfer-StyleTransferUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -672,9 +1060,47 @@
 			};
 			name = Debug;
 		};
-		B83F9082ED32469FC67CE66C3BDCD424 /* Release */ = {
+		CEEAAE538721FD1AB96CDFA8ED9FCFA6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F09D29F25CBCA55B7ADAB1636D2DE489 /* Pods-StyleTransfer.release.xcconfig */;
+			baseConfigurationReference = E2945A1E5F8AB54B9B5E24A966B37FA8 /* Pods-StyleTransfer-StyleTransferUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StyleTransfer-StyleTransferUITests/Pods-StyleTransfer-StyleTransferUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StyleTransfer-StyleTransferUITests/Pods-StyleTransfer-StyleTransferUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FA2783EFC49438DA161281B00842DF8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5690418A03CA592F7A0F5ACED4A5170 /* Pods-StyleTransfer.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -713,6 +1139,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2AF74AE1517C93E6DA7719E12E773AF5 /* Build configuration list for PBXNativeTarget "Pods-StyleTransfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54A052D768777E04C04B053FEA692635 /* Debug */,
+				FA2783EFC49438DA161281B00842DF8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -722,11 +1157,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B57FC9BA7E0396C8CAB4DA6D3192C32 /* Build configuration list for PBXNativeTarget "Pods-StyleTransfer-StyleTransferUITests" */ = {
+		87CDC3719C8961F1BCB0FFC62DFDC0A9 /* Build configuration list for PBXNativeTarget "Pods-StyleTransfer-StyleTransferUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				06409C6723647FB1BED043CFC15CD191 /* Debug */,
-				825A2EB3B7A77B4F2A3B8B3F80DE9A7A /* Release */,
+				B2389A95814B534050588461DE68B2E6 /* Debug */,
+				CEEAAE538721FD1AB96CDFA8ED9FCFA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -740,11 +1175,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BDDE92F474F4CAE96F136657C60E9AC7 /* Build configuration list for PBXNativeTarget "Pods-StyleTransfer" */ = {
+		CE46D50F7142469FB4F76946987DE8F0 /* Build configuration list for PBXNativeTarget "KRProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B350A9B93A198EC95B63AC212CC504F0 /* Debug */,
-				B83F9082ED32469FC67CE66C3BDCD424 /* Release */,
+				14394C310CB55A4531D35D3A9B3D7DC3 /* Debug */,
+				596739A7B2B05C885EBCC4008D91750A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED1F62E459590C11B6D6F75CE6FC6295 /* Build configuration list for PBXNativeTarget "KRActivityIndicatorView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08D3CFCD697E35B31C18946FE494E1B1 /* Debug */,
+				2F55D1E7E4C9E701F0522643A3A6296D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

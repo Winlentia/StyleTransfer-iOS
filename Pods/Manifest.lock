@@ -1,3 +1,20 @@
-PODFILE CHECKSUM: f16e78c6351197573b781f0e19ebf41702154800
+PODS:
+  - KRActivityIndicatorView (3.0.7)
+  - KRProgressHUD (3.4.7):
+    - KRActivityIndicatorView (= 3.0.7)
+
+DEPENDENCIES:
+  - KRProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - KRActivityIndicatorView
+    - KRProgressHUD
+
+SPEC CHECKSUMS:
+  KRActivityIndicatorView: ad69e89c4ce40c986cf580595be4829dcad0e35a
+  KRProgressHUD: a248f0bc6c9c2aed40a37b76e03ffecc7f85c887
+
+PODFILE CHECKSUM: 9d5dc67e584f3ddb3d206507bc9633c3ffb02bdd
 
 COCOAPODS: 1.11.2

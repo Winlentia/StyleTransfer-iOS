@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5DF5B0465CB69300AEADE1F3 /* Pods_StyleTransfer_StyleTransferUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8726EC82D6CCF976A4AD7B77 /* Pods_StyleTransfer_StyleTransferUITests.framework */; };
 		74636AD277369280EE369FE2 /* Pods_StyleTransferTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78198B529F46745CD48C619 /* Pods_StyleTransferTests.framework */; };
+		7834EF84282157B00038C3BB /* resizegan.mlkitmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7834EF82282157B00038C3BB /* resizegan.mlkitmodel */; };
+		7834EF882821C9CE0038C3BB /* YellowArtistic.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7834EF862821C9CE0038C3BB /* YellowArtistic.mlmodel */; };
+		7834EF892821C9CE0038C3BB /* Leons.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7834EF872821C9CE0038C3BB /* Leons.mlmodel */; };
 		784C6B2628204AFD00BFC721 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784C6B2528204AFD00BFC721 /* ImagePicker.swift */; };
 		784C6B2828205F9700BFC721 /* BrownTone.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 784C6B2728205F9700BFC721 /* BrownTone.mlmodel */; };
 		7881C142281F53C9007D2571 /* RickAndMorty.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7881C141281F53C9007D2571 /* RickAndMorty.mlmodel */; };
@@ -74,6 +77,9 @@
 		16C4E0E11DAEA0858FCC434E /* Pods-StyleTransfer-StyleTransferUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StyleTransfer-StyleTransferUITests.release.xcconfig"; path = "Target Support Files/Pods-StyleTransfer-StyleTransferUITests/Pods-StyleTransfer-StyleTransferUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1D47EE0887BDA789D3766A40 /* Pods-StyleTransfer-StyleTransferUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StyleTransfer-StyleTransferUITests.debug.xcconfig"; path = "Target Support Files/Pods-StyleTransfer-StyleTransferUITests/Pods-StyleTransfer-StyleTransferUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		32C92A1D8FDBB70523337E48 /* Pods-StyleTransfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StyleTransfer.release.xcconfig"; path = "Target Support Files/Pods-StyleTransfer/Pods-StyleTransfer.release.xcconfig"; sourceTree = "<group>"; };
+		7834EF82282157B00038C3BB /* resizegan.mlkitmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = resizegan.mlkitmodel; sourceTree = "<group>"; };
+		7834EF862821C9CE0038C3BB /* YellowArtistic.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YellowArtistic.mlmodel; sourceTree = "<group>"; };
+		7834EF872821C9CE0038C3BB /* Leons.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Leons.mlmodel; sourceTree = "<group>"; };
 		784C6B2528204AFD00BFC721 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		784C6B2728205F9700BFC721 /* BrownTone.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BrownTone.mlmodel; sourceTree = "<group>"; };
 		7881C141281F53C9007D2571 /* RickAndMorty.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RickAndMorty.mlmodel; sourceTree = "<group>"; };
@@ -178,6 +184,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7834EF81282157A60038C3BB /* Resize */ = {
+			isa = PBXGroup;
+			children = (
+				7834EF82282157B00038C3BB /* resizegan.mlkitmodel */,
+			);
+			path = Resize;
+			sourceTree = "<group>";
+		};
 		784C6B2428204AE900BFC721 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,8 +285,11 @@
 		788AB332281F4CE900D2DA08 /* MLModels */ = {
 			isa = PBXGroup;
 			children = (
+				7834EF81282157A60038C3BB /* Resize */,
 				7881C14928200C11007D2571 /* Picasso */,
 				788AB327281F45C500D2DA08 /* BlueStrong.mlmodel */,
+				7834EF872821C9CE0038C3BB /* Leons.mlmodel */,
+				7834EF862821C9CE0038C3BB /* YellowArtistic.mlmodel */,
 				7881C143281FDA79007D2571 /* gogh1.mlmodel */,
 				7881C144281FDA79007D2571 /* gogh2.mlmodel */,
 				784C6B2728205F9700BFC721 /* BrownTone.mlmodel */,
@@ -314,6 +331,7 @@
 				788AB2EF281F44A300D2DA08 /* Sources */,
 				788AB2F0281F44A300D2DA08 /* Frameworks */,
 				788AB2F1281F44A300D2DA08 /* Resources */,
+				2B90C163911814FA1601322D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -351,6 +369,7 @@
 				788AB30F281F44A400D2DA08 /* Sources */,
 				788AB310281F44A400D2DA08 /* Frameworks */,
 				788AB311281F44A400D2DA08 /* Resources */,
+				D3C69E9AE05AE2060738CF97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -434,6 +453,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2B90C163911814FA1601322D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StyleTransfer/Pods-StyleTransfer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StyleTransfer/Pods-StyleTransfer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StyleTransfer/Pods-StyleTransfer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		547B99EBA9E547865850E172 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -478,6 +514,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D3C69E9AE05AE2060738CF97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StyleTransfer-StyleTransferUITests/Pods-StyleTransfer-StyleTransferUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StyleTransfer-StyleTransferUITests/Pods-StyleTransfer-StyleTransferUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StyleTransfer-StyleTransferUITests/Pods-StyleTransfer-StyleTransferUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FC3D65E38FA82E94DD16FB7E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -512,6 +565,7 @@
 				7881C15C28200C1A007D2571 /* PicassoIteration450.mlmodel in Sources */,
 				7881C16628200C1A007D2571 /* PicassoIteration290.mlmodel in Sources */,
 				7881C16428200C1A007D2571 /* PicassoIteration300.mlmodel in Sources */,
+				7834EF882821C9CE0038C3BB /* YellowArtistic.mlmodel in Sources */,
 				7881C147281FDA79007D2571 /* gogh2.mlmodel in Sources */,
 				7881C15B28200C1A007D2571 /* PicassoIteration160.mlmodel in Sources */,
 				7881C15F28200C1A007D2571 /* PicassoIteration280.mlmodel in Sources */,
@@ -521,7 +575,9 @@
 				788AB2F7281F44A300D2DA08 /* AppDelegate.swift in Sources */,
 				788AB329281F45C600D2DA08 /* StyleBlue.mlmodel in Sources */,
 				784C6B2628204AFD00BFC721 /* ImagePicker.swift in Sources */,
+				7834EF84282157B00038C3BB /* resizegan.mlkitmodel in Sources */,
 				7881C16528200C1A007D2571 /* PicassoIteration190.mlmodel in Sources */,
+				7834EF892821C9CE0038C3BB /* Leons.mlmodel in Sources */,
 				7881C16128200C1A007D2571 /* PicassoIteration90.mlmodel in Sources */,
 				7881C16828200C1A007D2571 /* PicassoIteration140.mlmodel in Sources */,
 				7881C15A28200C1A007D2571 /* PicassoIteration200.mlmodel in Sources */,

@@ -12,9 +12,9 @@ import Foundation
 enum StyleModels: String, CaseIterable {
 //    case BlueStrong
 //    case StyleBlue
-//    case Hell
-//    case AbstractTest
-//    case RickAndMorty
+    case Hell
+    case AbstractTest
+    case RickAndMorty
     case Gogh1
     case Gogh2
     case Gogh3
@@ -35,6 +35,34 @@ enum StyleModels: String, CaseIterable {
     case PicassoIteration450
     case PicassoIteration470
     case BrownTone
+    case ResizeGan
+    case Leons
+    case YellowArtistic
+}
+
+extension StyleModels {
+    static func getArtisticStyles() -> [StyleModels] {
+        var artisticStyles:[StyleModels] = []
+        artisticStyles.append(.BrownTone)
+        artisticStyles.append(.Hell)
+        artisticStyles.append(.RickAndMorty)
+        artisticStyles.append(.AbstractTest)
+        artisticStyles.append(.Leons)
+        artisticStyles.append(.YellowArtistic)
+        
+        return artisticStyles
+    }
+    
+    static func getNormalStyles() -> [StyleModels] {
+        var array: [StyleModels] = []
+        let artisticStyles = self.getArtisticStyles()
+        for style in StyleModels.allCases {
+            if !artisticStyles.contains(style) && style != ResizeGan{
+                array.append(style)
+            }
+        }
+        return array
+    }
 }
 
 

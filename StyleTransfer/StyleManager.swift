@@ -28,12 +28,12 @@ struct StyleManager{
 //            s = try? StyleBlue.init(configuration: config).model
 //        case .BlueStrong:
 //            s = try? BlueStrong.init(configuration: config).model
-//        case .Hell:
-//            s = try? Hell.init(configuration: config).model
-//        case .AbstractTest:
-//            s = try? AbstractTest.init(configuration: config).model
-//        case .RickAndMorty:
-//            s = try? RickAndMorty.init(configuration: config).model
+        case .Hell:
+            s = try? Hell.init(configuration: config).model
+        case .AbstractTest:
+            s = try? AbstractTest.init(configuration: config).model
+        case .RickAndMorty:
+            s = try? RickAndMorty.init(configuration: config).model
         case .Gogh1:
             s = try? gogh1.init(configuration: config).model
         case .Gogh2:
@@ -74,6 +74,12 @@ struct StyleManager{
             s = try? PicassoIteration470.init(configuration: config).model
         case .BrownTone:
             s = try? BrownTone.init(configuration: config).model
+        case .ResizeGan:
+            s = try? resizegan.init(configuration: config).model
+        case .Leons:
+            s = try? Leons.init(configuration: config).model
+        case .YellowArtistic:
+            s = try? YellowArtistic.init(configuration: config).model
         }
         
         return s
@@ -98,14 +104,26 @@ struct StyleManager{
 
             DispatchQueue.main.async(execute: {
                 let styleImage = UIImage(pixelBuffer: observation.pixelBuffer)!
-                let croppedImage = styleImage.cropImage()
-                completion(.success(croppedImage))
+                completion(.success(styleImage))
+//                let croppedImage = styleImage.cropImage()
+//                completion(.success(croppedImage))
             })
         }
         
         request.imageCropAndScaleOption = .scaleFit
         
         try? VNImageRequestHandler(cgImage: (image.cgImage)!, options: [:]).perform([request])
+    }
+    
+    func scaleUpImage(image: UIImage,completion: @escaping (Result<UIImage,Error>) -> Void) {
+        self.getStyleImage(image: image, style: .ResizeGan) { result in
+            switch result{
+            case .success(let image):
+                completion(.success(image))
+            case .failure(let err):
+                completion(.failure(err))
+            }
+        }
     }
 }
 
