@@ -43,8 +43,6 @@
 		788AB30E281F44A400D2DA08 /* StyleTransferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB30D281F44A400D2DA08 /* StyleTransferTests.swift */; };
 		788AB318281F44A400D2DA08 /* StyleTransferUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB317281F44A400D2DA08 /* StyleTransferUITests.swift */; };
 		788AB31A281F44A400D2DA08 /* StyleTransferUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB319281F44A400D2DA08 /* StyleTransferUITestsLaunchTests.swift */; };
-		788AB329281F45C600D2DA08 /* StyleBlue.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 788AB326281F45C500D2DA08 /* StyleBlue.mlmodel */; };
-		788AB32A281F45C600D2DA08 /* BlueStrong.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 788AB327281F45C500D2DA08 /* BlueStrong.mlmodel */; };
 		788AB32B281F45C600D2DA08 /* Hell.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 788AB328281F45C600D2DA08 /* Hell.mlmodel */; };
 		788AB32D281F45FD00D2DA08 /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB32C281F45FD00D2DA08 /* StyleManager.swift */; };
 		788AB32F281F464E00D2DA08 /* StyleModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB32E281F464E00D2DA08 /* StyleModels.swift */; };
@@ -52,7 +50,6 @@
 		788AB336281F4D2B00D2DA08 /* StyleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB334281F4D2B00D2DA08 /* StyleCollectionViewCell.swift */; };
 		788AB337281F4D2B00D2DA08 /* StyleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 788AB335281F4D2B00D2DA08 /* StyleCollectionViewCell.xib */; };
 		788AB33A281F4F0900D2DA08 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AB339281F4F0900D2DA08 /* UIImage+Extensions.swift */; };
-		788FF43C282068A20073717F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788FF43B282068A20073717F /* CustomButton.swift */; };
 		BAEAB7D7108E610C9C7C2CF0 /* Pods_StyleTransfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC228CCC0C6906E326D45F0 /* Pods_StyleTransfer.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,8 +112,6 @@
 		788AB313281F44A400D2DA08 /* StyleTransferUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StyleTransferUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		788AB317281F44A400D2DA08 /* StyleTransferUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTransferUITests.swift; sourceTree = "<group>"; };
 		788AB319281F44A400D2DA08 /* StyleTransferUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTransferUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		788AB326281F45C500D2DA08 /* StyleBlue.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = StyleBlue.mlmodel; sourceTree = "<group>"; };
-		788AB327281F45C500D2DA08 /* BlueStrong.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BlueStrong.mlmodel; sourceTree = "<group>"; };
 		788AB328281F45C600D2DA08 /* Hell.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Hell.mlmodel; sourceTree = "<group>"; };
 		788AB32C281F45FD00D2DA08 /* StyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleManager.swift; sourceTree = "<group>"; };
 		788AB32E281F464E00D2DA08 /* StyleModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleModels.swift; sourceTree = "<group>"; };
@@ -124,7 +119,6 @@
 		788AB334281F4D2B00D2DA08 /* StyleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleCollectionViewCell.swift; sourceTree = "<group>"; };
 		788AB335281F4D2B00D2DA08 /* StyleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StyleCollectionViewCell.xib; sourceTree = "<group>"; };
 		788AB339281F4F0900D2DA08 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
-		788FF43B282068A20073717F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		7A585F6BDA2C3E594509001D /* Pods-StyleTransferTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StyleTransferTests.release.xcconfig"; path = "Target Support Files/Pods-StyleTransferTests/Pods-StyleTransferTests.release.xcconfig"; sourceTree = "<group>"; };
 		84550F38FC89D32C20460D41 /* Pods-StyleTransferTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StyleTransferTests.debug.xcconfig"; path = "Target Support Files/Pods-StyleTransferTests/Pods-StyleTransferTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8726EC82D6CCF976A4AD7B77 /* Pods_StyleTransfer_StyleTransferUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StyleTransfer_StyleTransferUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -287,7 +281,6 @@
 			children = (
 				7834EF81282157A60038C3BB /* Resize */,
 				7881C14928200C11007D2571 /* Picasso */,
-				788AB327281F45C500D2DA08 /* BlueStrong.mlmodel */,
 				7834EF872821C9CE0038C3BB /* Leons.mlmodel */,
 				7834EF862821C9CE0038C3BB /* YellowArtistic.mlmodel */,
 				7881C143281FDA79007D2571 /* gogh1.mlmodel */,
@@ -297,7 +290,6 @@
 				788AB330281F49D400D2DA08 /* AbstractTest.mlmodel */,
 				7881C141281F53C9007D2571 /* RickAndMorty.mlmodel */,
 				788AB328281F45C600D2DA08 /* Hell.mlmodel */,
-				788AB326281F45C500D2DA08 /* StyleBlue.mlmodel */,
 			);
 			path = MLModels;
 			sourceTree = "<group>";
@@ -307,7 +299,6 @@
 			children = (
 				788AB334281F4D2B00D2DA08 /* StyleCollectionViewCell.swift */,
 				788AB335281F4D2B00D2DA08 /* StyleCollectionViewCell.xib */,
-				788FF43B282068A20073717F /* CustomButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -573,7 +564,6 @@
 				788AB32F281F464E00D2DA08 /* StyleModels.swift in Sources */,
 				7881C16728200C1A007D2571 /* PicassoIteration440.mlmodel in Sources */,
 				788AB2F7281F44A300D2DA08 /* AppDelegate.swift in Sources */,
-				788AB329281F45C600D2DA08 /* StyleBlue.mlmodel in Sources */,
 				784C6B2628204AFD00BFC721 /* ImagePicker.swift in Sources */,
 				7834EF84282157B00038C3BB /* resizegan.mlkitmodel in Sources */,
 				7881C16528200C1A007D2571 /* PicassoIteration190.mlmodel in Sources */,
@@ -593,9 +583,7 @@
 				788AB336281F4D2B00D2DA08 /* StyleCollectionViewCell.swift in Sources */,
 				7881C15E28200C1A007D2571 /* PicassoIteration430.mlmodel in Sources */,
 				7881C15D28200C1A007D2571 /* PicassoIteration110.mlmodel in Sources */,
-				788FF43C282068A20073717F /* CustomButton.swift in Sources */,
 				788AB2F9281F44A300D2DA08 /* SceneDelegate.swift in Sources */,
-				788AB32A281F45C600D2DA08 /* BlueStrong.mlmodel in Sources */,
 				788AB32D281F45FD00D2DA08 /* StyleManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

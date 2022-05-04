@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var styleCollectionViewFlowLayout: UICollectionViewFlowLayout!
     @IBOutlet weak var selectImageLabel: UILabel!
     
-    
     var selectedImage: UIImage? {
         didSet {
             self.selectImageLabel.isHidden = true
@@ -29,14 +28,10 @@ class ViewController: UIViewController {
     }
     let sampleImage = UIImage(named: "MonaLisa")
     let manager = StyleManager()
-    var isImageStylized: Bool = false
     var imagePicker: ImagePicker!
-    
     
     let styleDataSources: [StyleModels] = StyleModels.getNormalStyles()
     let artisticStyleDataSources: [StyleModels] = StyleModels.getArtisticStyles()
-    
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,7 +87,9 @@ class ViewController: UIViewController {
     
     @IBAction func savePressed(_ sender: Any) {
         
-        KRProgressHUD.show(withMessage: "Loading")
+        DispatchQueue.main.async {
+            KRProgressHUD.show(withMessage: "Loading")
+        }
         if let image = imageView.image {
             manager.scaleUpImage(image: image) { result in
                 switch result {
@@ -107,12 +104,10 @@ class ViewController: UIViewController {
                     }
                 }
             }
-            // create the alert
                    
         }
     }
     @IBAction func originalmage(_ sender: Any) {
-//        UIImageWriteToSavedPhotosAlbum(imageView.image!,nil,nil,nil);
         imageView.image = sampleImage
     }
 }
@@ -156,9 +151,6 @@ extension ViewController: UICollectionViewDelegate {
                     print(err)
                 }
             }
-        } else {
-            // show popup select Image
-            
         }
     }
     
@@ -170,10 +162,6 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
         return .init(width: 120, height: 120)
     }
 
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: collectionView.bounds.height-5, height: collectionView.bounds.height-5)
-//    }
-//
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 10
     }

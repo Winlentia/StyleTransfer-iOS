@@ -24,10 +24,6 @@ struct StyleManager{
         var s : MLModel?
         
         switch styleModel {
-//        case .StyleBlue:
-//            s = try? StyleBlue.init(configuration: config).model
-//        case .BlueStrong:
-//            s = try? BlueStrong.init(configuration: config).model
         case .Hell:
             s = try? Hell.init(configuration: config).model
         case .AbstractTest:
@@ -105,8 +101,6 @@ struct StyleManager{
             DispatchQueue.main.async(execute: {
                 let styleImage = UIImage(pixelBuffer: observation.pixelBuffer)!
                 completion(.success(styleImage))
-//                let croppedImage = styleImage.cropImage()
-//                completion(.success(croppedImage))
             })
         }
         
